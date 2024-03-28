@@ -5,10 +5,9 @@ function App() {
 
   return (
     <>
-      <div>
-        <p>Thanks you for visiting my website</p>
+      <div >
+       <p>I hope you are doing well</p>
       </div>
-      
     </>
   )
 }
