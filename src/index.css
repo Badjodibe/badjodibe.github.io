@@ -1,0 +1,197 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: black;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@layer components{
+  .nav-container{
+      @apply  text-white p-6  top-0 inset-x-0 h-20  bg-black
+  }
+  .nav-display{
+      @apply  space-x-7 flex flex-row justify-center
+  }
+  .item-display{
+      @apply hover:text-cyan-700 
+  }
+
+  /* For the presentation of me */
+  .about-container{
+    @apply  p-2
+  }
+  .about-spant:hover{
+    @apply underline decoration-sky-600 hover:decoration-blue-400 
+  }
+  /* Acceuil */
+
+  .accueil-content{
+    @apply italic text-left p-12
+  }
+  .accueil{
+    @apply text-orange-300  text-7xl text-center 
+  }
+  .show-more{
+    @apply bg-black w-3/4 border-2 border-rose-500 h-24 m-44 text-3xl text-white
+  }
+  .show-more:hover{
+    @apply bg-cyan-800 border-2 border-gray-700
+  }
+  .show-more-content{
+    @apply bg-black w-full h-96 flex justify-center
+  }
+  .presentation{
+    @apply flex flex-col relative space-y-4 pt-24 w-5/6 pb-24
+  }
+  .follow-content{
+    @apply  fixed top-24 right-0 m-32 justify-evenly flex-col rounded-md bg-gray-500 shadow-lg w-12 h-72
+  }
+  .follow-item{
+    @apply hover:text-cyan-700
+  }
+ 
+  /* This is for the footer */
+
+  .footer-container{
+    @apply bg-zinc-700 w-full  inset-x-0 bottom-0  text-white h-44 flex flex-row justify-around 
+  }
+  .footer-follow{
+    @apply flex flex-col space-y-5  justify-center
+  }
+  .footer-display{
+    @apply space-x-0 justify-around bg-black flex flex-row w-3/5 
+  }
+  .footer-nav{
+    @apply flex flex-row space-x-7 m-9 items-center
+  }
+  .copy-right{
+    @apply p-7 text-right bg-zinc-700 text-white
+  }
+  /* about */
+  .about-container{
+    @apply flex flex-col pt-10
+  }
+
+  .about-principal{
+    @apply text-3xl text-left p-3
+  }
+  .about-content{
+    @apply text-sm text-left p-7 
+  }
+  .about-title{
+    @apply text-xl text-left p-2 bg-black w-1/3 hover:bg-cyan-700  text-white
+  }
+  .about-div{
+    @apply flex  flex-col
+  }
+
+/* blog */
+.blog-container{
+  @apply p-32 flex flex-col
+}
+.blog-title{
+  @apply text-left text-5xl  font-bold m-10
+}
+.blog-description{
+  @apply text-left text-xl p-6
+}
+.blog-content{
+  @apply flex flex-row
+}
+.blog-article{
+  @apply  bg-white flex flex-row flex-wrap p-2
+}
+.blog-article-content{
+  @apply flex flex-col  text-black  w-1/3 p-3 border border-gray-400
+}
+.blog-phrase{
+  @apply bg-black h-52 ml-44 justify-items-end
+}
+.blog-accueil{
+  @apply text-3xl justify-center bg-cyan-800 p-10 w-96 
+}
+.paragraphe{
+  @apply text-sm
+}
+.b-title{
+  @apply text-left
+}
+/* */
+.follow{
+  @apply text-rose-500
+}
+.button{
+  @apply border-2 border-rose-500 h-14 w-44 rounded-full m-14 min-w-16 
+}
+.button:hover{
+  @apply bg-cyan-800 border-2 border-gray-700
+}
+/* Article */
+.article-display{
+  @apply flex flex-col space-y-5 m-7
+}
+.article-content{
+  @apply flex flex-row justify-between
+}
+.article-title{
+  @apply text-4xl underline decoration-solid
+}
+.article-description{
+  @apply text-left
+}
+/* For all article*/
+.title{
+  @apply text-3xl justify-center  bg-cyan-600 p-12 mt-7
+}
+.article-container{
+  @apply flex flex-col   text-black bg-white w-1/2 justify-around mb-24
+}
+.section-title{
+  @apply text-2xl text-green-700 p-12
+}
+.table-content{
+  @apply bg-black pt-64 static
+}
+.display-article{
+  @apply bg-white flex justify-center items-center 
+}
+.b-title{
+  @apply text-xl text-cyan-700
+}
+.paragraphe{
+  @apply p-3
+}
+.lien{
+  @apply text-blue-700
+}
+.horizontal-line{
+  @apply w-1/4 h-2 bg-black transition-colors duration-300 hover:bg-red-500
+}
+
+/*Général*/
+.lii{
+  @apply text-left font-bold
+}
+.recommandation{
+  @apply flex flex-row space-x-5 mt-10
+}
+.lire-articles{
+  @apply h-20 text-2xl bg-cyan-700 mt-11  text-center pt-5
+}
+.alien{
+  @apply text-blue-700
+}
+}
