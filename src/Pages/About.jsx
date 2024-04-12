@@ -11,14 +11,7 @@ export default function About(){
                         ce que je sais mieux faire, c'est de développer des logiciels. Je passe beaucoup de mon temps
                         sur mon Ordinateur.<br/>
                         <br/>
-                        Actuellement, je poursuis mes étude au cycle Master et je travail
-                        sur <span> l'utilisation du Big Data couplé avec Deep Learning pour le traitement d'images
-                        biomédicalles.
-                        </span> <br/>
-                        <br/>
-                        J'aime partager, si tu t'interesse á la programmation informatique, j'ai créé un page sur
-                        laquelle je dépose les cours et projets en programmation informatique. Tu trouveras surement
-                        de contenue interessant <a href="https://github.com/mabakal">ici</a>
+                        J'aime résoudre les problèmes, j'aide á transformer des idées en des réalitées numeriques.
                        <br/>
                     </p>
                 </div>
@@ -35,24 +28,24 @@ export default function About(){
                         à des conférences. Ces moyens me permettent de rester constamment à jour et
                         de découvrir de nouvelles technologies et pratiques innovantes.<br/>
                         <br/>
-                        Aujourd'hui, je mets mes compétences au service de ceux qui désirent se former dans
-                        le domaine de la programmation, ainsi que des entreprises qui cherchent à exploiter
-                        les avantages offerts par le développement de logiciel.
+                        Aujourd'hui, je mets mes compétences au service des entreprises qui cherchent à exploiter
+                        les avantages offerts par le développement de logiciel. Je donnes également des formations dans
+                        dans le développement informatique et sur l'intelligence artificielle.
                     </p>
                 </div>
                 <hr />
                 <div className="about-div">
                     <h4 className="about-title">Quoi d'autre sur moi?</h4>
                     <p className="about-content">
-                        Présentement je vie au Maroc, plus précisement á béni Mellal, une des ville calmes du Maroc. 
+                        Présentement je vie au Maroc, plus précisement á béni Mellal, une des ville calmes du Maroc.
                         <br/>
                         <br/>
-                        Quand je ne suis pas en train de programmer, vous me trouverez souvent en train 
-                        de pratiquer le sport. Je suis un passionné de football et j'apprécie regarder 
-                        les matchs tout en prenant plaisir à jouer avec mes amis sur le terrain.
-                        En dehors de cela, je suis un éternel apprenant, toujours avide de nouvelles 
+                        Quand je ne suis pas en train de programmer, vous me trouverez souvent en train
+                        lire. je suis un éternel apprenant, toujours avide de nouvelles
                         connaissances. J'aime plonger dans les pensées des autres à travers la lecture
-                        de livres. Je partage aussi mes découverte et la partage avec les autres.
+                        de livres. Je suis aussi un passionné de football et j'apprécie regarder
+                        les matchs tout en prenant plaisir à jouer avec mes amis sur le terrain.
+                        En dehors de cela, Je partage aussi mes découverte et la partage avec les autres.
                     </p>
                 </div>
                 <hr />

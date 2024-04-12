@@ -98,8 +98,8 @@ function DeepLearning(){
             <div>
                 <div className="lire-articles">Quelques articles qui pourrons vous intéresser</div>
                 <div className="recommandation">
-                    <NavLink to={"/blog/set-up-hadoop-cluster"} className="alien"> Mettre en place un cluster de hadoop</NavLink>
-                    <NavLink to={"/blog/data-for-business"} className="alien"> L'analyse de données</NavLink>
+                    <a href="/blog/set-up-hadoop-cluster" className="alien">Mettre en place un cluster de hadoop</a>
+                    <a href="/blog/data-for-business" className="alien">L'analyse de données</a>
                 </div>
             </div>
         </div>

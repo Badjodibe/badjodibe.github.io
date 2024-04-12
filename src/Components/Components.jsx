@@ -7,12 +7,11 @@ function Navigation(){
         <div>
             <header>
                 <nav className="nav-container">
-                    <div className='nav-flex'>
-                        <div className='nav-display'>
-                            <div><NavLink to={"/"} className='item-display'>Accueil</NavLink></div>
-                            <div><NavLink to={"/about"} className='item-display'>Á Propos</NavLink></div>
-                            <div><NavLink to={"/blog"} className='item-display'>Blog</NavLink></div>
-                        </div>
+                    <div className='nav-display'>
+                        <div><NavLink to={"/"} className='item-display'>Accueil</NavLink></div>
+                        <div><NavLink to={"/about"} className='item-display'>Á Propos</NavLink></div>
+                        <div><NavLink to={"/blog"} className='item-display'>Blog</NavLink></div>
+                        <div><NavLink to={"/services"} className='item-display'>Services</NavLink></div>
                     </div>
                 </nav>
             </header>
@@ -49,6 +48,7 @@ function Footer(){
                         <div><NavLink to={"/"} className='item-display'>Accueil</NavLink></div>
                         <div><NavLink to={"/about"} className='item-display'>Á Propos</NavLink></div>
                         <div><NavLink to={"/blog"} className='item-display'>Blog</NavLink></div>
+                        <div><NavLink to={"/services"} className='item-display'>Services</NavLink></div>
                     </div>
                     <div className='footer-follow'>
                         <div>

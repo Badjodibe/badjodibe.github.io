@@ -1,20 +1,28 @@
-import { NavLink } from "react-router-dom";
-
 export default function Blog() {
     return (
       <>
+        <div className='display'>
+          <div className='display-content'>
+            <h1 className="title_principal">
+             Articles
+            </h1>
+            <p className="text-soutien">
+              Décrouvrer le numerique et comment les utilisées.
+            </p>
+          </div>
+          <div className='cote' id="cote">
+          Je partage sur le développement informatique ainsi que toutes autres pensées
+          qui me viennent et que je juge bon de partager.
+          </div>
+      </div>
+
         <div className="blog-container">
           <h1 className="blog-title" id="#voir-plus">
-          Je partage sur la développement de logiciel ainsi que toutes autres pensées
-          qui me viennent et que je juge bon de partager.
+          
           </h1>
-          <p className="blog-description">
-          Si tu es intéressé par le développement informatique ou par l'utilisation
-          de la technologie pour améliorer ton activité, tu trouveras ici des articles intéressants.
-          </p>
         </div>
         <div className="blog-phrase">
-           <h2 className="blog-accueil">Explorez les!</h2>
+           <h2 className="blog-accueil">Découvrez</h2>
         </div>
         <div className='blog-article'>
             <div className='blog-article-content'>
@@ -27,7 +35,9 @@ export default function Blog() {
                     des réseaux de neuronnes biologique pour résoudre les problèmes complexes...
                   </p>
                 </div>
-                <div><NavLink to={"/blog/deepLearning"} className="lien">Lire plus</NavLink></div>
+                <div>
+                <a href="/blog/deepLearning" className="lien">Lire plus</a>
+                </div>
             </div>
             <div className='blog-article-content'>
                 <div className="b-title">
@@ -39,7 +49,9 @@ export default function Blog() {
                     de prise de décision. Toutes les entreprises font des courses á la conquête de données...
                   </p>
                 </div>
-                <div><NavLink to={"/blog/data-for-business"} className="lien">Lire plus</NavLink></div>
+                <div>
+                  <a href="/blog/data-for-business" className="lien">Lire plus</a> 
+                </div>
             </div>
             <div className='blog-article-content'>
                 <div className="b-title">
@@ -51,7 +63,9 @@ export default function Blog() {
                     de stockage habituel rencontre des limites. Hadoop est un système de traitement de données ...
                   </p>
                 </div>
-                <div><NavLink to={"/blog/set-up-hadoop-cluster"} className="lien">Lire plus</NavLink></div>
+                <div>
+                  <a href="/blog/set-up-hadoop-cluster" className="lien">Lire plus</a> 
+                </div>
             </div>
         </div>
       </>

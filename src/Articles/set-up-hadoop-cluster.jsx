@@ -1,6 +1,5 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { NavLink } from 'react-router-dom';
 
 function HadoopCluster(){
 // Hadoop configuration
@@ -256,7 +255,15 @@ sudo apt install default-jdk`
                 </p>
                 <div>
                     <p>Sur le noeud maitre vous verrez</p>
-                    <div><img src="./Images/hadoop/maitre.png" alt="alt" /></div>
+                    <div><img src= "../public/images/hadoop/maitre.png" alt="alt" /></div>
+                </div>
+                <div>
+                    <p>Sur le noeud travailleur 1</p>
+                    <div><img src= "../public/images/hadoop/worker 1.png" alt="alt" /></div>
+                </div>
+                <div>
+                    <p>Et sur le 2</p>
+                    <div><img src= "../public/images/hadoop/worker 2.png" alt="alt" /></div>
                 </div>
             </section>
             <section>
@@ -273,8 +280,8 @@ sudo apt install default-jdk`
             <div>
                 <div className="lire-articles">Quelques articles qui pourrons vous intéresser</div>
                 <div className="recommandation">
-                    <NavLink to={"/blog/deepLearning"} className="alien"> Qu'est ce que le deep Learning</NavLink>
-                    <NavLink to={"/blog/data-for-business"} className="alien"> L'analyse de données</NavLink>
+                    <a href="/blog/deepLearning" className="lien">Qu'est ce que le deep Learning?</a> 
+                    <a href="/blog/data-for-business" className="lien">L'analyse de données</a> 
                 </div>
             </div>
         </div>

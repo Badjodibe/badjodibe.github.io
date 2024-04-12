@@ -19,16 +19,21 @@
 
 
 @layer components{
+  #cl{
+  @apply bg-none
+  }
   .nav-container{
-      @apply  text-white p-6  top-0 inset-x-0 h-20  bg-black
+      @apply  text-white p-6  top-0 inset-x-0 h-20  bg-black;
+     
   }
   .nav-display{
-      @apply  space-x-7 flex flex-row justify-center
+      @apply  space-x-7 flex flex-row justify-center;
+  
   }
   .item-display{
-      @apply hover:text-cyan-700 
+      @apply hover:text-gray-400
   }
-
+ 
   /* For the presentation of me */
   .about-container{
     @apply  p-2
@@ -39,60 +44,60 @@
   /* Acceuil */
 
   .accueil-content{
-    @apply italic text-left p-12
+    @apply italic text-left p-5 text-xl mt-3 ml-4 ss:text-sm
   }
   .accueil{
-    @apply text-orange-300  text-7xl text-center 
+    @apply text-green-600 text-7xl text-center ss:text-3xl
   }
   .show-more{
-    @apply bg-black w-3/4 border-2 border-rose-500 h-24 m-44 text-3xl text-white
+    @apply bg-white w-1/3 border-2 border-blue-700 h-20 m-16 text-3xl text-black ss:text-sm ss:h-16
   }
   .show-more:hover{
-    @apply bg-cyan-800 border-2 border-gray-700
+    @apply bg-green-600 border-2 border-gray-700
   }
   .show-more-content{
-    @apply bg-black w-full h-96 flex justify-center
+    @apply bg-gray-600 w-full h-56 flex justify-center
   }
   .presentation{
-    @apply flex flex-col relative space-y-4 pt-24 w-5/6 pb-24
+    @apply flex flex-col relative space-y-2 pt-11 w-5/6 pb-2
   }
   .follow-content{
-    @apply  fixed top-24 right-0 m-32 justify-evenly flex-col rounded-md bg-gray-500 shadow-lg w-12 h-72
+    @apply  fixed top-24 right-0 m-32 justify-evenly flex-col rounded-md bg-gray-400 shadow-lg w-12 h-72
   }
   .follow-item{
-    @apply hover:text-cyan-700
+    @apply hover:text-gray-400
   }
  
   /* This is for the footer */
 
   .footer-container{
-    @apply bg-zinc-700 w-full  inset-x-0 bottom-0  text-white h-44 flex flex-row justify-around 
+    @apply bg-zinc-700 w-full  inset-x-0 bottom-0  text-white h-44 flex flex-row justify-around ss:flex ss:flex-col
   }
   .footer-follow{
-    @apply flex flex-col space-y-5  justify-center
+    @apply flex flex-col space-y-5  justify-center ss:flex ss:flex-row ss:justify-around ss:space-y-0 ss:p-2
   }
   .footer-display{
     @apply space-x-0 justify-around bg-black flex flex-row w-3/5 
   }
   .footer-nav{
-    @apply flex flex-row space-x-7 m-9 items-center
+    @apply flex flex-row space-x-7 m-9 items-center ss:justify-around
   }
   .copy-right{
     @apply p-7 text-right bg-zinc-700 text-white
   }
   /* about */
   .about-container{
-    @apply flex flex-col pt-10
+    @apply flex flex-col pt-10 
   }
 
   .about-principal{
     @apply text-3xl text-left p-3
   }
   .about-content{
-    @apply text-sm text-left p-7 
+    @apply text-xl text-left p-7 ss:text-sm
   }
   .about-title{
-    @apply text-xl text-left p-2 bg-black w-1/3 hover:bg-cyan-700  text-white
+    @apply text-xl text-left p-2 bg-green-600 w-1/3  text-white underline
   }
   .about-div{
     @apply flex  flex-col
@@ -100,76 +105,70 @@
 
 /* blog */
 .blog-container{
-  @apply p-32 flex flex-col
+  @apply p-10 flex flex-col
 }
 .blog-title{
-  @apply text-left text-5xl  font-bold m-10
+  @apply text-center text-5xl  font-bold mt-3 text-green-600
 }
 .blog-description{
-  @apply text-left text-xl p-6
+  @apply text-left text-xl p-5
 }
 .blog-content{
-  @apply flex flex-row
+  @apply flex flex-row 
 }
 .blog-article{
-  @apply  bg-white flex flex-row flex-wrap p-2
+  @apply  bg-white flex flex-row flex-wrap p-2 ss:flex ss:flex-col
 }
 .blog-article-content{
-  @apply flex flex-col  text-black  w-1/3 p-3 border border-gray-400
+  @apply flex flex-col  text-black  w-1/3 p-3 border border-gray-500 ss:w-full
 }
 .blog-phrase{
-  @apply bg-black h-52 ml-44 justify-items-end
+  @apply bg-black h-36 ml-36 justify-items-end
 }
 .blog-accueil{
-  @apply text-3xl justify-center bg-cyan-800 p-10 w-96 
+  @apply text-3xl justify-center bg-blue-600 p-10 w-80 ss:text-xl
 }
 .paragraphe{
   @apply text-sm
 }
 .b-title{
-  @apply text-left
+  @apply text-xl text-green-600
 }
 /* */
-.follow{
-  @apply text-rose-500
-}
 .button{
-  @apply border-2 border-rose-500 h-14 w-44 rounded-full m-14 min-w-16 
+  @apply border-2 border-blue-700 h-14 w-44 rounded-full m-14 min-w-16 
 }
 .button:hover{
-  @apply bg-cyan-800 border-2 border-gray-700
+  @apply bg-green-600 border-gray-700
 }
 /* Article */
 .article-display{
-  @apply flex flex-col space-y-5 m-7
+  @apply flex flex-col space-y-5 m-5 ss:m-2
 }
 .article-content{
-  @apply flex flex-row justify-between
+  @apply flex flex-row justify-between ss:flex ss:flex-col 
 }
 .article-title{
-  @apply text-4xl underline decoration-solid
+  @apply text-4xl underline decoration-solid text-gray-900 hover:text-green-600 ss:text-xl
 }
 .article-description{
-  @apply text-left
+  @apply text-left ss:text-sm
 }
 /* For all article*/
 .title{
-  @apply text-3xl justify-center  bg-cyan-600 p-12 mt-7
+  @apply text-3xl justify-center  bg-green-600 p-10 mt-5 
 }
 .article-container{
   @apply flex flex-col   text-black bg-white w-1/2 justify-around mb-24
 }
 .section-title{
-  @apply text-2xl text-green-700 p-12
+  @apply text-2xl text-gray-500 pt-3
 }
 .table-content{
   @apply bg-black pt-64 static
 }
 .display-article{
   @apply bg-white flex justify-center items-center 
-}
-.b-title{
-  @apply text-xl text-cyan-700
 }
 .paragraphe{
   @apply p-3
@@ -193,5 +192,83 @@
 }
 .alien{
   @apply text-blue-700
+}
+/* Services */
+.title_principal{
+  @apply text-5xl text-green-700 ss:text-3xl
+}
+.text-soutien{
+  @apply text-xl
+}
+.display{
+  @apply flex flex-row justify-between p-7 ss:flex ss:flex-col
+}
+.display-reverse{
+  @apply flex flex-row-reverse justify-around p-7 ss:flex ss:flex-col
+}
+.display-content{
+  @apply space-y-3 p-3
+}
+.accroche{
+  @apply text-2xl text-orange-700 content-center
+}
+.service-accroche{
+  @apply bg-cyan-700 text-3xl mt-9 w-1/2 h-48 rounded ml-3  justify-center content-center
+}
+.mes-services{
+  @apply bg-gray-500  flex flex-row content-center justify-center ss:flex ss:flex-col
+}
+.service-short{
+  @apply  m-7 w-1/2 rounded-lg flex flex-col content-center bg-white ss:w-full ss:mr-3
+}
+.service{
+  @apply bg-gray-500 rounded-full h-20 ml-6 text-white content-center  text-center pl-2 pr-2 border-2 hover:bg-green-700 ss:h-10
+}
+.service-title{
+  @apply text-3xl text-green-600
+}
+.description{
+  @apply flex flex-col space-y-3 p-5 bg-white m-10
+}
+.description-service{
+  @apply text-xl pt-4
+}
+.all-services{
+  @apply flex flex-col space-y-7 m-9 justify-around
+}
+.description-contanair{
+  @apply flex flex-col items-center
+}
+#categorie{
+  @apply flex flex-row flex-wrap justify-around items-center m-8 ss:flex ss:flex-col ss:space-y-4 ss:p-4
+}
+
+.tool-categorie{
+  @apply bg-white p-3 rounded-xl text-xl hover:bg-green-600 ss:text-sm
+}
+.tools-display{
+  @apply flex flex-row justify-center bg-gray-600 p-10
+}
+.categorie{
+  @apply space-x-4 flex flex-row 
+}
+.tools{
+  @apply space-x-4 flex flex-row 
+}
+.tool{
+  @apply bg-gray-300 rounded-xl p-3 ss:p-1
+}
+
+.m-3{
+  @apply bg-blue-700 size-1 w-full
+}
+.cote{
+  @apply bg-blue-700 w-full rounded-lg shadow-xl 
+}
+#cote{
+  @apply text-3xl content-center p-4 text-white ss:text-xl
+}
+#code-about{
+  @apply text-white
 }
 }
