@@ -76,7 +76,7 @@ function Principal(){
             </div>
         </div>
         <div className='show-more-content'>
-            <button className='show-more'><a href="/blog">Voir plus</a></button>
+            <button className='show-more'><a href="http://badjodibe.github.io/badjodibe.github.io/blog">Voir plus</a></button>
         </div>
         </>
     );
