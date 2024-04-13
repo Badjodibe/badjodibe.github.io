@@ -120,7 +120,7 @@ return(
               </div>
       </div>
       <div className='show-more-content'>
-            <button className='show-more'><a href="/about">Contact Moi</a></button>
+            <button className='show-more'><a href="#/about">Contact Moi</a></button>
       </div>
     </>
 );
