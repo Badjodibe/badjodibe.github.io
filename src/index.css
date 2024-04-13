@@ -159,7 +159,7 @@
   @apply text-3xl justify-center  bg-green-600 p-10 mt-5 ss:text-2xl ss:w-full
 }
 .article-container{
-  @apply flex flex-col text-black bg-white w-1/2 justify-around mb-24 ss:w-full ss:m-4
+  @apply flex flex-col text-black bg-white w-1/2 justify-around mb-24 ss:w-full
 }
 .section-title{
   @apply text-2xl text-gray-500 pt-3 ss:text-xl
@@ -168,7 +168,7 @@
   @apply bg-black pt-64 static
 }
 .display-article{
-  @apply bg-white flex justify-center items-center 
+  @apply bg-white flex justify-center items-center  ss:p-7
 }
 .paragraphe{
   @apply p-3
