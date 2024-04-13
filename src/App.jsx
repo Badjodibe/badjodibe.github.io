@@ -13,20 +13,21 @@ import {
   createBrowserRouter,
   RouterProvider,
   createRoutesFromElements,
-  Route
+  Route,
+
 } from "react-router-dom";
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Navigation/>}>
-      <Route index element={<Accueil/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/blog' element={<Blog/>}/>
-      <Route path='/erroElement' element={<ErrorPage/>}/>
-      <Route path='/services' element={<Services/>}/>
-      <Route path='/blog/deepLearning' element={<DeepLearning/>}/>
-      <Route path='/blog/data-for-business' element={<DataForBusiness/>}/>
-      <Route path='/blog/set-up-hadoop-cluster' element={<HadoopCluster/>}/>
-    </Route>
+      <Route path='/' element={<Navigation/>} >
+        <Route index element={<Accueil/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path='/erroElement' element={<ErrorPage/>}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/blog/deepLearning' element={<DeepLearning/>}/>
+        <Route path='/blog/data-for-business' element={<DataForBusiness/>}/>
+        <Route path='/blog/set-up-hadoop-cluster' element={<HadoopCluster/>}/>
+      </Route>
   ));
 
 function App() {
