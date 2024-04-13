@@ -50,7 +50,7 @@ export default function Blog() {
                   </p>
                 </div>
                 <div>
-                  <a href="/blog/data-for-business" className="lien">Lire plus</a> 
+                  <a href="#/blog/data-for-business" className="lien">Lire plus</a> 
                 </div>
             </div>
             <div className='blog-article-content'>
@@ -64,7 +64,7 @@ export default function Blog() {
                   </p>
                 </div>
                 <div>
-                  <a href="/blog/set-up-hadoop-cluster" className="lien">Lire plus</a> 
+                  <a href="#/blog/set-up-hadoop-cluster" className="lien">Lire plus</a> 
                 </div>
             </div>
         </div>
