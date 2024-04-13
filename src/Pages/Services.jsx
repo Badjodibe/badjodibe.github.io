@@ -135,7 +135,6 @@ function Developpement(){
             <p className="description-service">
             Que votre projet de système d'information soit complexe ou ambitieux,
             je suis là pour vous accompagner dans sa concrétisation.
-            
             </p>
         </div>
     </div>
