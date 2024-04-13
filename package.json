@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"http://badjodibe.github.io/badjodibe.github.io/#",
+  "homepage":"http://badjodibe.github.io/badjodibe.github.io/#/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
