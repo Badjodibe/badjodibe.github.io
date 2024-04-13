@@ -254,7 +254,7 @@ sudo apt install default-jdk`
                 </p>
                 <div>
                     <p>Sur le noeud maitre vous verrez</p>
-                    <div><img src= "./badjodibe.github.io/maitre.png" alt="alt" /></div>
+                    <div><img src= "./badjodibe.github.io/images/hadoop/maitre.png" alt="alt" /></div>
                 </div>
                 <div>
                     <p>Sur le noeud travailleur 1</p>
