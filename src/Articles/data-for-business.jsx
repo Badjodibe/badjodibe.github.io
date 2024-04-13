@@ -170,8 +170,8 @@ export default function DataForBusiness(){
             <div>
                 <div className="lire-articles">Quelques articles qui pourrons vous intéresser</div>
                 <div className="recommandation">
-                    <a href="/blog/set-up-hadoop-cluster" className="alien">Mettre en place un cluster de hadoop</a>
-                    <a href="/blog/deepLearning" className="alien"> Qu'est ce que le deep learning</a>
+                    <a href="#/blog/set-up-hadoop-cluster" className="alien">Mettre en place un cluster de hadoop</a>
+                    <a href="#/blog/deepLearning" className="alien"> Qu'est ce que le deep learning</a>
                 </div>
             </div>
         </div>

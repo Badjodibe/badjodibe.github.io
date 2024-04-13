@@ -10,7 +10,6 @@ function HadoopCluster(){
     <value>hdfs://master-ip-address:9000</value>
     </property>
 </configuration>`;
-    
     const hdfs =` 
     <configuration>
         <property>
@@ -255,15 +254,15 @@ sudo apt install default-jdk`
                 </p>
                 <div>
                     <p>Sur le noeud maitre vous verrez</p>
-                    <div><img src= "../public/images/hadoop/maitre.png" alt="alt" /></div>
+                    <div><img src= "../#/public/images/hadoop/maitre.png" alt="alt" /></div>
                 </div>
                 <div>
                     <p>Sur le noeud travailleur 1</p>
-                    <div><img src= "../public/images/hadoop/worker 1.png" alt="alt" /></div>
+                    <div><img src= "../#/public/images/hadoop/worker 1.png" alt="alt" /></div>
                 </div>
                 <div>
                     <p>Et sur le 2</p>
-                    <div><img src= "../public/images/hadoop/worker 2.png" alt="alt" /></div>
+                    <div><img src= "../#/public/images/hadoop/worker 2.png" alt="alt" /></div>
                 </div>
             </section>
             <section>
