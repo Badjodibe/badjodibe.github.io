@@ -42,7 +42,7 @@ function Principal(){
                 </p>
                 </div>
                 <div>
-                    <button className='button'><a href="/blog/deepLearning">Voir plus</a></button>
+                    <button className='button'><a href="#/blog/deepLearning">Voir plus</a></button>
                 </div>
             </div>
             <hr />
@@ -66,12 +66,10 @@ function Principal(){
                     Hadoop est un système de traitement de données distribué très utilisé dans les entreprises, 
                     c'est une solution aux problèmes rencontrés par les Systèmes de gestion de base de données habituel.
                     Cet article est un guide pour mettre en place un cluster de hadoop.
-
                     </p>
                 </div>
                 <div>
                     <button className='button'><a href="/blog/set-up-hadoop-cluster">Voir plus</a></button>
-                    
                 </div>
             </div>
         </div>
