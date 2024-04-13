@@ -24,9 +24,9 @@ const router = createHashRouter(
     <Route path='/blog' element={<Blog/>}/>
     <Route path='/erroElement' element={<ErrorPage/>}/>
     <Route path='/services' element={<Services/>}/>
-    <Route path='#/blog/deepLearning' element={<DeepLearning/>}/>
-    <Route path='#/blog/data-for-business' element={<DataForBusiness/>}/>
-    <Route path='#/blog/set-up-hadoop-cluster' element={<HadoopCluster/>}/>
+    <Route path='/blog/deepLearning' element={<DeepLearning/>}/>
+    <Route path='/blog/data-for-business' element={<DataForBusiness/>}/>
+    <Route path='/blog/set-up-hadoop-cluster' element={<HadoopCluster/>}/>
 </Route>
   )
   );
