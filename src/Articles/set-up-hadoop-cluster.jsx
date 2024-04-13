@@ -280,8 +280,8 @@ sudo apt install default-jdk`
             <div>
                 <div className="lire-articles">Quelques articles qui pourrons vous intéresser</div>
                 <div className="recommandation">
-                    <a href="/blog/deepLearning" className="lien">Qu'est ce que le deep Learning?</a> 
-                    <a href="/blog/data-for-business" className="lien">L'analyse de données</a> 
+                    <a href="#/blog/deepLearning" className="lien">Qu'est ce que le deep Learning?</a> 
+                    <a href="#/blog/data-for-business" className="lien">L'analyse de données</a> 
                 </div>
             </div>
         </div>

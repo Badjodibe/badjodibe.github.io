@@ -36,7 +36,7 @@ export default function Blog() {
                   </p>
                 </div>
                 <div>
-                <a href="/blog/deepLearning" className="lien">Lire plus</a>
+                <a href="#/blog/deepLearning" className="lien">Lire plus</a>
                 </div>
             </div>
             <div className='blog-article-content'>

@@ -55,7 +55,7 @@ function Principal(){
                     </p>
                 </div>
                 <div>
-                    <button className='button'><a href="/blog/data-for-business">Voir plus</a></button>
+                    <button className='button'><a href="#/blog/data-for-business">Voir plus</a></button>
                 </div>
             </div>
             <hr />
@@ -69,7 +69,7 @@ function Principal(){
                     </p>
                 </div>
                 <div>
-                    <button className='button'><a href="/blog/set-up-hadoop-cluster">Voir plus</a></button>
+                    <button className='button'><a href="#/blog/set-up-hadoop-cluster">Voir plus</a></button>
                 </div>
             </div>
         </div>
