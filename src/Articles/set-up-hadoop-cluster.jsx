@@ -68,7 +68,6 @@ export PATH=/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 export PATH=/bin:`
 const install_java = `sudo apt update
 sudo apt install default-jdk`
-
     return(
         <>
         <div className="display-article">
@@ -254,15 +253,15 @@ sudo apt install default-jdk`
                 </p>
                 <div>
                     <p>Sur le noeud maitre vous verrez</p>
-                    <div><img src= "./badjodibe.github.io/images/hadoop/maitre.png" alt="alt" /></div>
+                    <div><img src= "/images/hadoop/maitre.png" alt="alt" /></div>
                 </div>
                 <div>
                     <p>Sur le noeud travailleur 1</p>
-                    <div><img src= "./public/images/hadoop/worker 1.png" alt="alt" /></div>
+                    <div><img src= "/images/hadoop/worker 1.png" alt="alt" /></div>
                 </div>
                 <div>
                     <p>Et sur le 2</p>
-                    <div><img src= "./public/images/hadoop/worker 2.png" alt="alt" /></div>
+                    <div><img src= "/images/hadoop/worker 2.png" alt="alt" /></div>
                 </div>
             </section>
             <section>
