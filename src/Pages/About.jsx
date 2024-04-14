@@ -17,14 +17,14 @@ export default function About(){
                 </div>
                 <hr />
                 <div className="about-div">
-                    <h4 className="about-title">Comment j'ai commencer ce voyage?</h4>
+                    <h4 className="about-title">Comment à commencer ce voyage?</h4>
                     <p className="about-content">
                         Je  programme il y a plus de quatre ans, au début j'étais curieux sur
-                        la programmation et je suis tombé sur un livre de programmation Java. Depuis ce 
+                        la programmation et je suis tombé sur un livre de programmation Java. Depuis ce
                         temps j'ai dévéloper un amour pour la programmation.
                         <br/>
-                        Mon parcours d'apprentissage se poursuit alors que j'explore ce monde fascinant 
-                        à travers la lecture de livres, la consultation d'articles et la participation 
+                        Mon parcours d'apprentissage se poursuit alors que j'explore ce monde fascinant
+                        à travers la lecture de livres, la consultation d'articles et la participation
                         à des conférences. Ces moyens me permettent de rester constamment à jour et
                         de découvrir de nouvelles technologies et pratiques innovantes.<br/>
                         <br/>
@@ -45,7 +45,7 @@ export default function About(){
                         connaissances. J'aime plonger dans les pensées des autres à travers la lecture
                         de livres. Je suis aussi un passionné de football et j'apprécie regarder
                         les matchs tout en prenant plaisir à jouer avec mes amis sur le terrain.
-                        En dehors de cela, Je partage aussi mes découverte et la partage avec les autres.
+                        En dehors de cela, je rédige des articles pour les partagés avec ma communauté.
                     </p>
                 </div>
                 <hr />

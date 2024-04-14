@@ -15,7 +15,7 @@ function Principal(){
                 les défis techniques et trouver des solutions innovantes. <span className='lien'><a href="./about">En savoir plus sur moi</a></span>
                 <br/>
                 <br/>
-                Tu peux me retrouver sur 
+                Retrouver-moi sur
                 <span className='lien'> <a href="https://www.linkedin.com/in/badjo-dib%C3%A9-koffi-b108b7175/">linkedIn </a></span> ou 
                 sur <span className='lien'> <a href="https://github.com/badjodibe">GitHub</a></span>.
                 <br/> <br/>
@@ -23,7 +23,6 @@ function Principal(){
                 j'ai créer une page sur laquelle je dépose des ressources, liées á la programmation.
                  <span className='lien'> <a href="https://github.com/mabakal">Visite la page</a></span>.<br/>
                 </p>
-       
         </div>
         <hr/>
         <div className="blog-phrase">

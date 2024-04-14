@@ -54,12 +54,12 @@ return(
               Les défis
             </h1>
             <p className="text-soutien">
-            Polyvalant et gourmant de savoir, j'utilise la technologies <br /> du numerique pour aider 
-            á optimiser les activité.
+            Polyvalant et gourmant de savoir, j'utilise la technologies <br /> du numerique pour relever les 
+            défis, apporter des solutions.
             </p>
           </div>
           <div className='cote' id="cote">
-            J'aime la liberté de l'esprit á chercher les idées innovants, les regroupés pour proposer
+            J'aime la liberté de l'esprit á chercher les idées innovants, les regroupés et proposer
             des solutions uniques.
           </div>
       </div>
@@ -100,7 +100,7 @@ return(
               Ici sont les outils que j'utilise
             </h1>
             <p className="text-soutien">
-              Ci dessous les outils et languages que j'utilise.
+              J'utilise quodidiennement les outils plus polulaire.
             </p>
           </div>
           <div className='cote' id="categorie">
@@ -144,7 +144,7 @@ function Data(){
   return(
     <div className="description-contanair">
         <div className="description">
-            <h3 className='service-title'>Prenez de meilleurs décision</h3>
+            <h3 className='service-title'>Prenez des décisions éclairées</h3>
             <p className="description-service">
             La prise de décision est toujours un processus crucial.
             J'analyse vos données afin de mettre en lumière ce qu'elles cachent,
@@ -162,8 +162,8 @@ function Artificille(){
             Utilisation de l'IA pour des Décisions Assistées
             </h3>
             <p className="description-service">
-            Intégrer l'Intelligence Artificielle dans Vos Activités,
-            je Vous Accompagne dans Vos Projets
+            Intégrer l'Intelligence Artificielle dans vos systèmes,
+            je Vous accompagne dans vos projets.
             </p>
         </div>
       </div>

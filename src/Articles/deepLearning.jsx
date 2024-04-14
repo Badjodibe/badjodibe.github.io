@@ -76,18 +76,19 @@ function DeepLearning(){
                 <h3 id="lien" className="section-title">Lien entre apprentissage profond et apprentissage automatique</h3>
                 <hr />
                 <p className="paragraphe">
-                    L'apprentissage automatique est un ensembles d'algorithme construit pour aider les machines á
+                    L'apprentissage automatique est un ensembles d'algorithme construit pour développer des machines á
                     prendre des décisions á partir des données. Ils sont écrit pour faire sortir les relations
                     qui existe entre les données pour ensuite établir une règle générale afin de l'utilisé pour prédire
-                    Ces algorithme ont eu deux succès dans la résolution
-                    de noubreux problèmes, notament les problèmes de classification, de regression ou encore de partitionement
-                    Malgré leur succès ce algorithme ne sont pas éfficace devant certains problèmes ayant un fort relations
-                    nom linéaire. <br/>
+                    Ces algorithmes ont eu des succès dans la résolution
+                    de noubreux problèmes, notament les problèmes de classification(prédire les catégories), de regression 
+                    (prédire un valeur continue) ou encore de partitionnement (á prédire les groupes d'appartenance).
+                    Malgré leur succès ces algorithmes ne sont pas éfficace devant certains problèmes ayant un fort relations
+                    non linéaire, ou dépendance temporelle. <br/>
                     L'apprentissage profond est un une branche de l'apprentissage automatique qui résoud les problèmes ayant
                     une forte dépendance non-linèaire. Il se base sur le fonctionnement du réseaux humain. Les informations
                     sont transmis au noeuronne du réseaux qui effectue tes traitements ensuite le renvoie au neuronnes de la
-                    couche suivant ains de suite jusqu'a prédire le résultat. Au niveaux des neuronnes, les relations de non
-                    linéarité sont introdut.
+                    couche suivant ainsi de suite jusqu'a prédire le résultat final. Au niveau des neuronnes, les relations de non
+                    linéarité sont introduit.
                     Pour les problèmes qui ont une forte dépendance temporal, les algorithmes de l'apprentissage profond on eu
                     du succes notement avec les reseaux de neuronnes récurrent. Il est utilisé dans de nombreux domaine notament
                     la finance pour detecter les fraute, prédire le prix des instruments financier, dans la médécine pour
@@ -95,7 +96,7 @@ function DeepLearning(){
                 </p>
             </section>
             <div>
-                <div className="lire-articles">Quelques articles qui pourrons vous intéresser</div>
+                <div className="lire-articles">Quelques articles qui pourrons vous intéressez</div>
                 <div className="recommandation">
                     <a href="#/blog/set-up-hadoop-cluster" className="alien">Mettre en place un cluster de hadoop</a>
                     <a href="#/blog/data-for-business" className="alien">L'analyse de données</a>

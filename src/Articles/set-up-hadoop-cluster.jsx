@@ -68,6 +68,9 @@ export PATH=/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 export PATH=/bin:`
 const install_java = `sudo apt update
 sudo apt install default-jdk`
+
+const hadoo_download=`wget https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz
+tar -xzf hadoop-3.4.0.tar.gz`
     return(
         <>
         <div className="display-article">
@@ -79,9 +82,9 @@ sudo apt install default-jdk`
                 <p>
                     <span> Tout tourne autour des Données </span>. Les données jouent un rôle très crucial dans
                     le monde d'aujourd'hui, les entreprises, les gouvernements, les organisations font la course au
-                    données en dépensant massivement. La raison est les données permettent la productivité et l'éfficacité
-                    de toutes opération. Avec les données, les décisions sont prise d'une manière éclarer, les risques sont gérer
-                    les potentielle marché sont identifier. Auparavant, il y avait des système de gestion de base de données
+                    données en dépensant massivement. La raison est que les données permettent la productivité et l'éfficacité
+                    de toutes opérations. Avec les données, les décisions sont prise d'une manière éclairer, les risques sont gérés
+                    les potentiels marché sont identifier. Auparavant, il y avait des système de gestion de base de données
                     qui permettait de collecter et stocker les données, mais au fil du temps ces système trouvent des limites car
                     les données deviennent plus volumineux, plus varié, et viennent très rapidement. Pensez au données
                     des commentaires des utilisateurs sur une plateforme de réseau sociaux ou les données données produits par
@@ -92,7 +95,7 @@ sudo apt install default-jdk`
                     entreprise pour stocker analyse leur données. C'est un système de traitement distribué permettant de
                     traiter de grandes volumes de données en distribuant les données sur plusieurs machines. Il adopte une
                     architecture qui permet de traiter des données d'une manière rapide et efficace. Un cluster de hadoop est
-                    un ensembles de machines connecter entre elles pour traiter les données. On de trouver de deux jusqu'à des
+                    un ensembles de machines connecter entre elles pour traiter les données. On en trouve de deux jusqu'à des
                     centaine de machines dans un cluster. Dans ce article je vais vous montré comment mettre en place un cluster
                     en utilisant les machines virtuelles de Amazon (AMI). A la fin de cette article, vous pourrez
                     mettre en place votre propre cluster et commprendre comment le système de hadoop fonctionne.
@@ -102,7 +105,7 @@ sudo apt install default-jdk`
                 <h3 id="application" className="section-title">Prérequis</h3>
                 <hr />
                 <p>
-                Hadoop dépend des logiciel pour son bon fonctionnement, ce logiciels sont indispensables. Avant
+                Hadoop dépend des logiciel pour son bon fonctionnement, ces logiciels sont indispensables. Avant
                 d'entré dans les étapes de téléchargement et de configuration d'un cluster de hadoop, assurez vous de disposé
                 ces logiciels.
                     <ul>
@@ -157,7 +160,7 @@ sudo apt install default-jdk`
                         <li>
                             <h4 className="lii"> Configurer les variables d'environnement</h4>
                             <p>
-                            Dans le fichier `.bashrc` situé dans votre dossier home, définir les variables
+                            Dans le fichier `.bashrc` situé dans votre dossier home(si vous êtes sur linex ou un système de type unix), définir les variables
                             d'environnement suivantes. Ca va permettre á hadoop de localiser les programmes
                             et les exécuter.
                             <SyntaxHighlighter language="bash" style={prism}>
@@ -172,13 +175,27 @@ sudo apt install default-jdk`
                 <h4>Architecture de hadoop</h4>
                 <p>
                     Hadoop est un système distribué permettant de traiter un grand volume de données.
-                    Le traitement de ces données est répartie sur plusieurs machines, qui ensemble combien 
-                    leur résultat. L'ensemble de ces machine est ce qu'on appèl un cluser. Un cluster peux aller de 
+                    Le traitement de ces données est répartie sur plusieurs machines, qui ensemble combiennent 
+                    leur résultat pour en produire un resultat globale. L'ensemble de ces machine est ce qu'on appèl un cluser. Un cluster peux aller de 
                     deux á des centaines de machine. Hadoop est basé sur l'architecture <span> maître et travailleurs</span>.
                     Dans le cluster une machine maître se charge de coordonner les tâches. Le maître est chargé de déléguer 
-                    les tâches au différent machine travailleurs qui après avoir effectué le traitement retourne le résultat 
+                    les tâches aux différentes machines travailleurs qui après avoir effectué le traitement retourne le résultat 
                     au noeud maître qui les combines en renvoyant le résultat final.
 
+                </p>
+            </section>
+
+            <section>
+                <h3 id="lien" className="section-title">Télechargement</h3>
+                <hr/>
+                <p >
+                    Pour télécharger hadoop, aller sur leur site principal de 
+                     <a href="https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz">hadoop</a>
+                     puis télécharger votre hadoop. Une fois télécharger décompresser le fichier. Vous pouvez le faire en ligne
+                     de commande comme ceci.<br/>
+                     <SyntaxHighlighter language="bash" style={prism}>
+                                {hadoo_download.trim()}
+                    </SyntaxHighlighter>
                 </p>
             </section>
             <section>
@@ -186,8 +203,8 @@ sudo apt install default-jdk`
                 <hr/>
                 <p >
                     Une fois hadoop télécharger et décompresser, nous allons maitenant effectuer la configuration
-                    de ce dernier. La configuration consiste á personnaliser hadoop selon tes besoins et les ressources
-                    machine qui sont á ta disposition. La configuration est très simple il suffit, elle fait intervenier
+                    de ce dernier. La configuration consiste á personnaliser hadoop selon les besoins et les ressources
+                    machine qui sont à votre disposition. La configuration est très simple, elle fait intervenier
                     quatre fichier principal <span>hdfs-site.xml, core-site.xml, yarn.xml et map-reduce.xml</span>
                     <ul>
                         <li>
@@ -216,8 +233,8 @@ sudo apt install default-jdk`
                         <h4 className="lii">Configuration du fichier yarn-site.xml</h4>
                             <p>
                             Plusieurs machine travail en harmonie pour traiter un grand volume de données, comment sont 
-                            gérer les ressources de chacune des machine dans le cluster, yarn est un logiciel qui permet 
-                            la gestion des ressources d'une machine. Hadoop utilise yarn pour gérer les ressource de chaque 
+                            gérées les ressources de chacune des machines dans le cluster, yarn est un logiciel qui permet 
+                            la gestion des ressources d'une machine. Hadoop utilise yarn pour gérer les ressources de chaque 
                             machine, ici nous allons configurer la gestion des ressources de la machine.
 
                             <SyntaxHighlighter language="xml" style={prism}>
@@ -233,8 +250,8 @@ sudo apt install default-jdk`
                 <hr />
                 <p>
                     Sur la machine maître, créer dans le dossier de configuration un fichier nommées `workers`, dans 
-                    cette fichier donner les address IP des machines esclave dans le cluster ligne par ligne. Ce qui va
-                    permettre á la machine maître de savoir la localisation des machines esclave.
+                    ce fichier donner les address IP des machines esclaves dans le cluster ligne par ligne. Ce qui va
+                    permettre á la machine maître de savoir la localisation des machines travailleurs.
                 </p>
             </section>
             <section>
@@ -276,7 +293,7 @@ sudo apt install default-jdk`
                 </p>
             </section>
             <div>
-                <div className="lire-articles">Quelques articles qui pourrons vous intéresser</div>
+                <div className="lire-articles">Quelques articles qui pourrons vous intéressez</div>
                 <div className="recommandation">
                     <a href="#/blog/deepLearning" className="lien">Qu'est ce que le deep Learning?</a> 
                     <a href="#/blog/data-for-business" className="lien">L'analyse de données</a> 

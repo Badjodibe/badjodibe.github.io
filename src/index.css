@@ -67,7 +67,7 @@
   .follow-item{
     @apply hover:text-gray-400
   }
- 
+
   /* This is for the footer */
 
   .footer-container{
@@ -77,7 +77,7 @@
     @apply flex flex-col space-y-5  justify-center ss:flex ss:flex-row ss:justify-around ss:space-y-0 ss:p-2
   }
   .footer-display{
-    @apply space-x-0 justify-around bg-black flex flex-row w-3/5 
+    @apply space-x-0 justify-around bg-black flex flex-row w-3/5
   }
   .footer-nav{
     @apply flex flex-row space-x-7 m-9 items-center ss:justify-around
@@ -126,7 +126,7 @@
   @apply bg-black h-36 ml-36 justify-items-end ss:m-0
 }
 .blog-accueil{
-  @apply text-3xl justify-center bg-blue-600 p-10 w-80 ss:text-xl
+  @apply text-3xl justify-center bg-blue-600 p-10 w-80 ss:text-xl 
 }
 .paragraphe{
   @apply text-sm
@@ -234,13 +234,13 @@
   @apply text-xl pt-4 ss:text-sm
 }
 .all-services{
-  @apply flex flex-col space-y-7 m-9 justify-around
+  @apply flex flex-col space-y-7 m-9 justify-around ss:flex  ss:p-3 ss:m-2 ss:space-y-2
 }
 .description-contanair{
   @apply flex flex-col items-center
 }
 #categorie{
-  @apply flex flex-row flex-wrap justify-around items-center m-8 ss:flex ss:flex-col ss:space-y-4 ss:p-4 ss:m-0
+  @apply flex flex-row flex-wrap justify-around items-center m-8 ss:flex ss:flex-row ss:space-y-2 ss:p-4 ss:m-0
 }
 
 .tool-categorie{
@@ -266,7 +266,7 @@
   @apply bg-blue-700 w-full rounded-lg shadow-xl ss:text-sm
 }
 #cote{
-  @apply text-3xl content-center p-4 text-white ss:text-sm
+  @apply text-2xl content-center p-4 text-white ss:text-sm 
 }
 #code-about{
   @apply text-white

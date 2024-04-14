@@ -18,7 +18,7 @@ export default function Blog() {
 
         <div className="blog-container">
           <h1 className="blog-title" id="#voir-plus">
-          
+
           </h1>
         </div>
         <div className="blog-phrase">
