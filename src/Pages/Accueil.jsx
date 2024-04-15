@@ -12,7 +12,7 @@ function Principal(){
                 Salut, je suis Dibe, un développeur avec plus de 4 ans d'expérience dans le domaine de la programmation.
                 Mon objectif est d'aider à transformer des idées en réalité numérique.
                 Que ce soit en développant des applications, l'analyse de données j'aime relever
-                les défis techniques et trouver des solutions innovantes. <span className='lien'><a href="./about">En savoir plus sur moi</a></span>
+                les défis techniques et trouver des solutions innovantes. <span className='lien'><a href="#/about">En savoir plus sur moi</a></span>
                 <br/>
                 <br/>
                 Retrouver-moi sur
