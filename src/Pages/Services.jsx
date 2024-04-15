@@ -69,7 +69,7 @@ return(
           <div className="all-services">
             <div className="service"> <button onClick={renderDeveloppement}>Développement informatique</button></div>
             <div className="service"><button onClick={renderData}>Analyse de données</button></div>
-            <div className="service"><button onClick={renderArtificille}>Intelligence artificiel</button></div>
+            <div className="service"><button onClick={renderArtificille}>Intelligence artificielle</button></div>
           </div>
           <div className="service-short">
             <div className="description-contanair" id='cl'>
