@@ -4,50 +4,54 @@ export default function About(){
     return (
         <div>
             <div className="about-container">
-                <div className="about-div">
-                    <h1 className="about-title">Salut</h1>
-                    <p className="about-content">
-                        Moi c'est <span>Dibé </span>
-                        ce que je sais mieux faire, c'est de développer des logiciels. Je passe beaucoup de mon temps
-                        sur mon Ordinateur.<br/>
-                        <br/>
-                        J'aime résoudre les problèmes, j'aide á transformer des idées en des réalitées numeriques.
-                       <br/>
-                    </p>
-                </div>
-                <hr />
-                <div className="about-div">
-                    <h4 className="about-title">Comment à commencer ce voyage?</h4>
-                    <p className="about-content">
-                        Je  programme il y a plus de quatre ans, au début j'étais curieux sur
-                        la programmation et je suis tombé sur un livre de programmation Java. Depuis ce
-                        temps j'ai dévéloper un amour pour la programmation.
-                        <br/>
-                        Mon parcours d'apprentissage se poursuit alors que j'explore ce monde fascinant
-                        à travers la lecture de livres, la consultation d'articles et la participation
-                        à des conférences. Ces moyens me permettent de rester constamment à jour et
-                        de découvrir de nouvelles technologies et pratiques innovantes.<br/>
-                        <br/>
-                        Aujourd'hui, je mets mes compétences au service des entreprises qui cherchent à exploiter
-                        les avantages offerts par le développement de logiciel. Je donnes également des formations dans
-                        dans le développement informatique et sur l'intelligence artificielle.
-                    </p>
-                </div>
-                <hr />
-                <div className="about-div">
-                    <h4 className="about-title">Quoi d'autre sur moi?</h4>
-                    <p className="about-content">
-                        Présentement je vie au Maroc, plus précisement á béni Mellal, une des ville calmes du Maroc.
-                        <br/>
-                        <br/>
-                        Quand je ne suis pas en train de programmer, vous me trouverez souvent en train
-                        lire. je suis un éternel apprenant, toujours avide de nouvelles
-                        connaissances. J'aime plonger dans les pensées des autres à travers la lecture
-                        de livres. Je suis aussi un passionné de football et j'apprécie regarder
-                        les matchs tout en prenant plaisir à jouer avec mes amis sur le terrain.
-                        En dehors de cela, je rédige des articles pour les partagés avec ma communauté.
-                    </p>
-                </div>
+              <div className="about-title">
+                A propos  de moi
+              </div>
+              <div className="about-div">
+                <p>
+                    Dibé, avait découvert la programmation un peu tard.
+                    Tout a commencé il y a plus de quatre ans, lorsqu'il a mis la main sur un livre de programmation Java.
+                    Mais comme le dit le proverbe, il n'est jamais trop tard pour commencer quelque chose de grand.
+                    C'est là que son voyage dans le monde du développement logiciel a commencé.
+                    <br/>
+                    <br/>
+                    Dibé est assoifé de connaissance et de résolution de problèmes.
+                    Chaque ligne de code était nouvelle opportuinité de créer, de relever les
+                    défis pour aider les autres.
+                    <br/>
+                    <br/>
+                    Au fil des ans, Dibé a continué son parcours d'apprentissage, explorant un monde fascinant à
+                    travers la lecture de livres, la consultation d'articles et la participation à des conférences.
+                    Son désir de rester constamment à jour et de découvrir de nouvelles technologies et pratiques
+                    innovantes l'a motivé à poursuivre sans relâche son chemin dans le monde du développement
+                    informatique.
+                    <br/>
+                    <br/>
+                    Aujourd'hui, Dibé met ses compétences exceptionnelles au service des entreprises désireuses de
+                    tirer parti des avantages offerts par le développement logiciel. En tant que développeur
+                    expérimenté et formateur passionné, il partage son expertise avec les autres, les aidant à
+                    acquérir les compétences nécessaires pour réussir dans le monde de la technologie.
+                    <br/>
+                    <br/>
+                    En dehors de son travail, Dibé est un passionné de lecture. Pour lui, les livres sont une source
+                    intarissable d'inspiration et de savoir. Il puise dans ces pages des idées, des concepts et des
+                    perspectives qui enrichissent son esprit et nourrissent sa passion pour la technologie en
+                    constante évolution.
+                    <br/>
+                    <br/>
+                    Mais Dibé n'est pas seulement un amoureux des livres, il est aussi un fervent amateur de sport,
+                    et plus particulièrement de football. Sur le terrain, il se laisse emporter par l'excitation du
+                    jeu, jouant avec fougue et enthousiasme aux côtés de ses amis.
+                    Il aime se détendre en regardant un match à la télévision, partageant des moments de joie et de
+                    camaraderie avec ceux qui lui sont chers.
+                    <br/>
+                    <br/>
+                    Il n'oublie jamais l'importance de passer du temps avec sa famille. Pour Dibé,
+                    chaque moment 
+                    passé avec ses proches est précieux, un rappel constant de l'importance des liens familiaux
+                    et du soutien inconditionnel qu'ils offrent.
+                </p>
+              </div>
                 <hr />
                 <div className="about-div">
                     <h4 className="about-title">Joingnez-moi</h4>

@@ -94,13 +94,13 @@
     @apply text-3xl text-left p-3
   }
   .about-content{
-    @apply text-xl text-left p-7 ss:text-sm
+    @apply text-xl text-left p-7  ss:text-sm
   }
   .about-title{
     @apply text-xl text-left p-2 bg-green-600 w-1/3  text-white underline
   }
   .about-div{
-    @apply flex  flex-col
+    @apply flex  flex-col w-1/2 p-10
   }
 
 /* blog */
@@ -114,7 +114,7 @@
   @apply text-left text-xl p-5
 }
 .blog-content{
-  @apply flex flex-row 
+  @apply flex flex-row
 }
 .blog-article{
   @apply  bg-white flex flex-row flex-wrap p-2 ss:flex ss:flex-col
@@ -126,7 +126,7 @@
   @apply bg-black h-36 ml-36 justify-items-end ss:m-0
 }
 .blog-accueil{
-  @apply text-3xl justify-center bg-blue-600 p-10 w-80 ss:text-xl 
+  @apply text-3xl justify-center bg-blue-600 p-10 w-80 ss:text-xl
 }
 .paragraphe{
   @apply text-sm
@@ -136,7 +136,7 @@
 }
 /* */
 .button{
-  @apply border-2 border-blue-700 h-14 w-44 rounded-full m-14 min-w-16 
+  @apply border-2 border-blue-700 h-14 w-44 rounded-full m-14 min-w-16
 }
 .button:hover{
   @apply bg-green-600 border-gray-700
@@ -146,7 +146,7 @@
   @apply flex flex-col space-y-5 m-5 ss:m-2
 }
 .article-content{
-  @apply flex flex-row justify-between ss:flex ss:flex-col 
+  @apply flex flex-row justify-between ss:flex ss:flex-col
 }
 .article-title{
   @apply text-4xl underline decoration-solid text-gray-900 hover:text-green-600 ss:text-xl

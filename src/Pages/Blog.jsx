@@ -67,6 +67,20 @@ export default function Blog() {
                   <a href="#/blog/set-up-hadoop-cluster" className="lien">Lire plus</a> 
                 </div>
             </div>
+            <div className='blog-article-content'>
+                <div className="b-title">
+                  <h3>Comprendre le LSTM</h3>
+                  </div>
+                <div className="paragraphe">
+                  <p >
+                    Le LSTM(Long-Short Term Memory) est un modèle d'apprentissage profond utilisé pour résoudre 
+                    nombreux problèmes dans différents domaine. Ce article vous introduit au LSTM ...
+                  </p>
+                </div>
+                <div>
+                  <a href="#/blog/lstm" className="lien">Lire plus</a> 
+                </div>
+            </div>
         </div>
       </>
     );
