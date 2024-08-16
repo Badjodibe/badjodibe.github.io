@@ -34,7 +34,7 @@ const Welcome = () => {
             <hr />
             
             <div>
-                <button className="contactButton" onClick={()=> window.open("/contacts", "_self")}>Contacter moi</button>
+                <button className="contactButton" onClick={()=> window.open("#/contacts", "_self")}>Contacter moi</button>
             </div>
         </div>
     )

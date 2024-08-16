@@ -9,8 +9,8 @@ return(
             </div>
             <div id="navLink">
                 <a href="/">Accueil</a>
-                <a href="/posts">Blog</a>
-                <a href="/contacts">Contact</a>
+                <a href="#/posts">Blog</a>
+                <a href="#/contacts">Contact</a>
             </div>
             <div>
                 
