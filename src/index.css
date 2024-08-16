@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  #root{
+    @apply dark:bg-black dark:text-white xs:text-sm
+  }
+    h1{
+        @apply text-7xl text-center mt-4 mb-4 xs:text-5xl
+    }
+    h3{
+        @apply text-3xl  mt-4 mb-4 xs:text-xl
+    }
+    h4{
+        @apply text-2xl  mt-4 mb-4 xs:text-xl
+    }
+    h5{
+        @apply text-xl  mt-4 mb-4
+    }
+    h6{
+      @apply font-bold
+    }
+    header{
+      @apply flex flex-row rounded-sm pb-11 pt-12  justify-around bg-zinc-800 
+    }
+    a{
+      @apply text-green-400 hover:text-white
+    }
+    footer{
+      @apply bg-zinc-800
+    }
+}
+
+@layer components{
+/*
+    For contact
+*/
+
+
+/*
+  For articles
+*/
+
+.postMeta{
+    @apply flex flex-col p-3
+}
+.postDate{
+@apply text-center mt-12 mb-8
+}
+.postContent{
+    @apply   flex flex-col pl-60 pr-60 xs:pl-10 xs:pr-10
+}
+.postinfo{
+    @apply text-green-700
+}
+.postImage{
+  @apply flex flex-row p-12 justify-center 
+}
+
+.postDisplay{
+  @apply flex flex-col border-spacing-2  rounded-xl
+}
+.postContainer{
+  @apply flex flex-row space-x-5 p-4 xs:flex-col flex-wrap xs:space-x-0 xs:space-y-5 xs:p-0 bg-gray-400
+}
+.postInfo{
+  @apply flex flex-col justify-between space-y-2
+}
+.postIm{
+  @apply w-96 h-64
+}
+.article-content{
+  @apply flex flex-row justify-between xs:flex xs:flex-col
+}
+.article-display{
+  @apply flex flex-col space-y-5 m-5 xs:m-2
+}
+.article-title{
+  @apply text-4xl underline decoration-solid text-gray-900 hover:text-green-600 xs:text-xl
+}
+.button{
+  @apply border-2 border-blue-700 h-14 w-44 rounded-full m-14 min-w-16
+}
+.article-description{
+  @apply text-left xs:text-sm
+}
+.postText{
+  @apply text-2xl w-96 pt-2 pb-2
+}
+
+.blog-article{
+  @apply  bg-white flex flex-row flex-wrap p-2 xs:flex xs:flex-col
+}
+.blog-article-content{
+  @apply flex flex-col  text-black  w-1/3 p-3 border border-gray-500 xs:w-full
+}
+.paragraphe{
+  @apply text-sm
+}
+.b-title{
+  @apply text-xl text-green-600
+}
+.lien{
+  @apply text-blue-700
+}
+/*
+Header
+*/
+#navLink{
+  @apply flex flex-row justify-center space-x-7
+}
+/*
+  For conférences
+*/
+
+/*
+  Conact button
+*/
+.contactButton{
+  @apply w-full h-16 text-2xl p-3 border border-zinc-950 mb-20 mt-20 dark:bg-white dark:text-black 
+}
+/*
+Follow
+*/
+.followDisplay{
+  @apply flex flex-row space-x-3
+}
+/*
+  Project
+*/
+.follow{
+  @apply flex flex-col justify-between space-y-3
+}
+.footer-container {
+  @apply flex flex-row justify-around pt-10  text-white pb-10 mt-20  dark:bg-blue-950 dark:text-white xs:flex-col xs:justify-center xs:flex xs:p-10
+}
+
+.footer-section{
+  @apply flex flex-col 
+}
+.footer-bottom{
+  @apply text-center pt-5 pb-5 bg-white  dark:bg-blue-950 dark:text-white
+}
+
+.fondImage{
+  @apply w-96 h-80
+}
+
+/*
+  Contact
+*/
+
+.contacts{
+  @apply flex flex-row justify-center space-x-20 dark:bg-black dark:text-white
+}
+}
+.contactAction{
+  @apply text-center text-7xl text-green-700  font-bold mt-12 xs:text-4xl
+}
+.contactContainer{
+  @apply bg-white dark:bg-black dark:text-white
+}
+/*
+For the footer of the projet
+*/
+
+
+
+  
+
+  
+
+  
+
+  
+

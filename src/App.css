@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* For the contact form*/
+@layer components {
+  #labelContact {
+    @apply text-gray-700 text-sm font-bold mb-2;
+  }
+  .contactForm {
+    @apply bg-white flex mt-56 p-8 rounded-lg shadow-md w-full max-w-lg mx-auto  items-center;
+  }
+  #root{
+    @apply dark:border-l-indigo-950
+  }
+  .contact {
+    background-image: url("../public/contact.webp");
+    background-size: cover;
+    background-position: center;
+    @apply  h-96 items-center justify-center w-96;
+  }
+  .displayData{
+    @apply flex flex-col
+  }
+  .contactError{
+    @apply text-red-600
+  }
+  .contactInput{
+    @apply space-x-10 space-y-4
+  }
+  #labelContact{
+    @apply text-sm bg-zinc-200 
+  }
+  #input{
+    @apply text-xs
+  }
+  #submitContact{
+    @apply justify-center
+  }
+  .showData{
+    @apply mt-24
+  }
+}
