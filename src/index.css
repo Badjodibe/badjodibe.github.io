@@ -108,7 +108,7 @@
 Header
 */
 #navLink{
-  @apply flex flex-row justify-center space-x-7
+  @apply flex flex-row justify-center space-x-7 
 }
 /*
   For conférences
@@ -118,7 +118,7 @@ Header
   Conact button
 */
 .contactButton{
-  @apply w-full h-16 text-2xl p-3 border border-zinc-950 mb-20 mt-20 dark:bg-white dark:text-black 
+  @apply w-full h-16 text-2xl p-3 border border-zinc-950 mb-20 mt-20 dark:bg-green-700 dark:text-black 
 }
 /*
 Follow
@@ -133,14 +133,14 @@ Follow
   @apply flex flex-col justify-between space-y-3
 }
 .footer-container {
-  @apply flex flex-row justify-around pt-10  text-white pb-10 mt-20  dark:bg-blue-950 dark:text-white xs:flex-col xs:justify-center xs:flex xs:p-10
+  @apply flex flex-row justify-around pt-10  text-white pb-10 mt-20  dark:bg-zinc-700 dark:text-white xs:flex-col xs:justify-center xs:flex xs:p-10
 }
 
 .footer-section{
   @apply flex flex-col 
 }
 .footer-bottom{
-  @apply text-center pt-5 pb-5 bg-white  dark:bg-blue-950 dark:text-white
+  @apply text-center pt-5 pb-5 bg-white   dark:bg-zinc-700
 }
 
 .fondImage{

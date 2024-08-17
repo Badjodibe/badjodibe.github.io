@@ -126,7 +126,7 @@ export default function Hadoop() {
     return(
         <>
             <div className="postMeta">
-                <div className="postDate">Publier le</div>
+                <div className="postDate">Publier le 31 Juin 2024</div>
                 <h1>Mettre en place un cluster de hadoop</h1>
                 <div >
                     <img src="../../../public/default.jpg" alt="" className="postImage"/>

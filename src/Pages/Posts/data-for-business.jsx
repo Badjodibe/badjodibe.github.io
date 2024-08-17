@@ -3,7 +3,7 @@ const Business = () => {
     return(
         <>
             <div className="postMeta">
-                <div className="postDate">Publier le </div>
+                <div className="postDate">Publier le 17 Juillet 2024 </div>
                 <h1> Importance des données pour les entreprises</h1>
                 <div>
                     <div >

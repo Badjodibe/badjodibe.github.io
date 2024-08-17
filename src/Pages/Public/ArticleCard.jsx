@@ -2,7 +2,7 @@ import React from 'react';
 
 const ArticleCard = ({ image, title, description, url }) => {
   const openInNewTab = () => {
-    window.open(url, '_self', 'noopener,noreferrer');
+    window.open(url, '_self');
   };
 
   return (

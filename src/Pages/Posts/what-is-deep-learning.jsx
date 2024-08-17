@@ -2,7 +2,7 @@
     return(
         <>
             <div className="postMeta">
-                <div className="postDate">Publier le </div>
+                <div className="postDate">Publier le 10 Juin 2024 </div>
             </div>
             <h1>L'apprentissage profond(deep learning), qu'est-ce que c'est ?</h1>
             <div className="postImage">

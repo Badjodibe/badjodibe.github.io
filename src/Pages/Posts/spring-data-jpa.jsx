@@ -388,10 +388,10 @@ export default function SpringDataJpa() {
     return(
         <>
         <div className="postMeta">
-            <div className="postDate">Publier le </div>
+            <div className="postDate">Publier le 31 Juillet 2024</div>
             <h1>Fondements de Spring data jpa</h1>
             <div className="postImage">
-                    <img src="../../../public/default.jpg" alt=""/>
+                    <img src="/default.jpg" alt=""/>
                 </div>
         </div>
        
@@ -411,7 +411,7 @@ export default function SpringDataJpa() {
                 <p>
                     La meilleurs manière de tirer profit de ce projet est de pratiquer au fuir et 
                     á mesure que vous lisez, pour allez plus vite, j'ai mis á votre disposition
-                    le code source de ce projet sur mon compte (aller sur ce lien).
+                    le code source de ce projet sur mon compte <a href="https://github.com/Badjodibe/springdata">en cliquant ici</a>.
                 </p>
                 <h3>Introduction</h3>
                 <p>
@@ -565,10 +565,7 @@ export default function SpringDataJpa() {
                         </li>
                     </ul>
                 </p>
-                <h4>Quelques annotation</h4>
-                <div>
-
-                </div>
+        
                 <h5>Application</h5>
                 <p>
                     Nous allons créer une application qui va gérer un ensemble de voiture et ses 
