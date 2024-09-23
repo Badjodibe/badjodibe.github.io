@@ -579,7 +579,7 @@ export default function SpringDataJpa() {
                 <p>
                     Si vous n'avez pas encore l'initializer de spring boot qui permet d'initialisé 
                     les applications spring boot, vous pouvez le téléchargé sur ce lien
-                    [lien de spring boot initializer].
+                    <a href="https://start.spring.io/"> ce lien</a>.
 
                 </p>
                 <h5>Ajout de dépendances</h5>
@@ -595,7 +595,7 @@ export default function SpringDataJpa() {
                     cette table dans la base de données, ce champs est annoté par l'annotation Id 
                     et la stratégie utilisé pour générer les valeures de ce champs.
                 </p>
-                <div dangerouslySetInnerHTML={{ __html: marked(personne) }}></div>
+                <div id="code" dangerouslySetInnerHTML={{ __html: marked(personne) }}></div>
                 <h5>Entité voiture</h5>
                 <p>
                     De la même manière qu'une personne, une voiture á ces information qui sont 
@@ -603,7 +603,7 @@ export default function SpringDataJpa() {
                     relation de plusieurs á un avec la classe personne, c'est á dire une 
                     personne peux avoir plusieurs voiture
                 </p>
-                <div dangerouslySetInnerHTML={{ __html: marked(voiture) }}></div>
+                <div id="code" dangerouslySetInnerHTML={{ __html: marked(voiture) }}></div>
                 <p>
                     Une entité représente une table dans la base de données. Spring boot gère 
                     la création automatique de la table correspondance á l'entité dans la base de 
@@ -618,7 +618,7 @@ export default function SpringDataJpa() {
                     fonction représente une requête.  Par exemple le premier correspond au voiture
                     d'une personne identifié par son nom
                 </p>
-                <div dangerouslySetInnerHTML={{ __html: marked(voiturerepository) }}></div>
+                <div id="code"  dangerouslySetInnerHTML={{ __html: marked(voiturerepository) }}></div>
                 <h5>PersonneRepository</h5>
                 <p>
                     De la même manière que VoitureRepository, nous allons créer PersonneRepository
@@ -626,7 +626,7 @@ export default function SpringDataJpa() {
                     Cette fois si nous allons utilisé la technique de methodes personnalisé pour 
                     écrire les requêtes. 
                 </p>
-                <div dangerouslySetInnerHTML={{ __html: marked(personnerepository) }}></div>
+                <div id="code" dangerouslySetInnerHTML={{ __html: marked(personnerepository) }}></div>
                 <p>
                     L'application est une application web, nous allons développer les services 
                     et les contrôleur pour tester la connection et l'excécution des opérations 
@@ -634,14 +634,14 @@ export default function SpringDataJpa() {
                     Pour chacune de ces services.
                 </p>
                 <h5>Service des personnes</h5>
-                <div dangerouslySetInnerHTML={{ __html: marked(personneservice) }}></div>
+                <div id="code" dangerouslySetInnerHTML={{ __html: marked(personneservice) }}></div>
                 <h5>Service des voitures</h5>
-                <div dangerouslySetInnerHTML={{ __html: marked(voitureservice) }}></div>
+                <div  id="code" dangerouslySetInnerHTML={{ __html: marked(voitureservice) }}></div>
                 <p>Maintenant développons les controllers, le points d'accès á notre application</p>
                 <h5>Controller des voitures</h5>
-                <div dangerouslySetInnerHTML={{ __html: marked(voiturecontroller) }}></div>
+                <div id="code" dangerouslySetInnerHTML={{ __html: marked(voiturecontroller) }}></div>
                 <h5>Controller des personnes</h5>
-                <div dangerouslySetInnerHTML={{ __html: marked(personnecontroller) }}></div>
+                <div id="code" dangerouslySetInnerHTML={{ __html: marked(personnecontroller) }}></div>
                 <p>
                     Pour vérifier le bon fonctionnement de l'application, lancer cette dernière et 
                     aller sous le port de l'exécution de l'application sur postman et envoyé des 

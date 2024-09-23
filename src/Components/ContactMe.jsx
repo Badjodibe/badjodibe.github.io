@@ -9,8 +9,8 @@ export default function Contact(){
         <>
             
             <div className="contactContainer">
-                <div className="contactAction">Donnez vie á votre idée</div>
-                <div className="postDate">Vous pensez que je peux vous aidez contacter moi pour en discuter</div>
+                <div className="contactAction">Contacter Moi</div>
+                <div className="postDate">Vous pouvez me joindre sur mes differents comptes</div>
                 <div className="contacts">
                     <button onClick={()=> window.open("https://www.linkedin.com/in/badjo-dib%C3%A9-koffi-b108b7175/", "_blank")} ><LinkedIn/> </button>
                     <button onClick={()=> window.open("https://www.github.com/Badjodibe/", "_blank")} ><GitHub/></button>

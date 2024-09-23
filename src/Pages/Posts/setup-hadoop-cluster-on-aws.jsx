@@ -174,12 +174,12 @@ export default function Hadoop() {
                                     Sur la plupart des systèmes d'exploitation, le secure Shell est disponible, pour le vérifier
                                     taper 
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(ssh_check) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(ssh_check) }}></div>
                                 <p>
                                     Dans le cas la connexion est refusé, utilisé cette commande pour l'installer. Le client sera 
                                     á la fois client et serveur. (je précise que je suis sur le système ubuntu)
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(install_ssh) }}></div>
+                                <div  id="code" dangerouslySetInnerHTML={{ __html: marked(install_ssh) }}></div>
                             </li>
                             <li>
                                 <h5>JDK</h5>
@@ -187,7 +187,7 @@ export default function Hadoop() {
                                     Hadoop est basé sur Java, il utilise les programmes Java pour fonctionner, vous devez
                                     disposer java sur toutes les machines.
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(install_java) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(install_java) }}></div>
                             </li>
                             <li>
                                 <h5>
@@ -198,13 +198,13 @@ export default function Hadoop() {
                                 sa clées. Ici nous allons utilisés l'algorithme de RSA pour générer les clés des 
                                 machines. Pour le faire taper cette commande dans votre terminal
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(key_generation) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(key_generation) }}></div>
                                 <p>
                                     Cette étapes dois s'éffectué sur toutes les machines. Après que les clés soient générées 
                                     partager la clé d'une machine sur toutes les autres machines pour que la machine 
                                     authorise la connexion.
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(share_key) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(share_key) }}></div>
                                 <p>
                                     Si cette commande ne marche (c'était mon cas), effectuer le manuellement en copiant 
                                     la clé de la machine dans le fichier `~/ssh/id_rsa.pub` et le coller sur dans le fichier 
@@ -220,7 +220,7 @@ export default function Hadoop() {
                                     d'environnement suivantes. Ca va permettre á hadoop de localiser les programmes
                                     et les exécuter.
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(envs_var) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(envs_var) }}></div>
                             </li>
                         </ul>
                     </div>
@@ -242,7 +242,7 @@ export default function Hadoop() {
                             puis télécharger votre hadoop. Une fois télécharger décompresser le fichier. Vous pouvez le faire en ligne
                             de commande comme ceci.<br/>
                         </p>
-                        <div dangerouslySetInnerHTML={{ __html: marked(hadoo_download) }}></div>
+                        <div id="code" dangerouslySetInnerHTML={{ __html: marked(hadoo_download) }}></div>
                     </div>
                     <h4>Configuration</h4>
                     <div>
@@ -259,7 +259,7 @@ export default function Hadoop() {
                                     Dans ce fichier vous préciser l'adresse IP de la machine qui sera chargé de coordonner
                                     les traitement, c'est á dire la machine maitre.
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(core) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(core) }}></div>
                             </li>
                             <li>
                                 <h5>Configuration du fichier hdfs-site.xml</h5>
@@ -268,7 +268,7 @@ export default function Hadoop() {
                                 Vous préciser le nombre de copy de votre données qu'il faudra, dans mon ca j'ai
                                 choisi 3, ensuite vous préciser le chemin des dossier de stockage de données.
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(hdfs) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(hdfs) }}></div>
                             </li>
                             <li>
                                 <h5>
@@ -280,7 +280,7 @@ export default function Hadoop() {
                                     la gestion des ressources d'une machine. Hadoop utilise yarn pour gérer les ressources de chaque 
                                     machine, ici nous allons configurer la gestion des ressources de la machine.
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(yarn) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(yarn) }}></div>
                             </li>
                             <h4>Donner l'address IP des machines</h4>
                             <div>
@@ -294,11 +294,11 @@ export default function Hadoop() {
                                     Une fois tous configurer, exécuter les commandes suivantes pour lancer hadoop, ces commandes
                                     sont excécuter sur la machine maitre.
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(execution) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(execution) }}></div>
                                 <p>
                                     Pour voir si tout est en marche entrer dans votre terminal la commande
                                 </p>
-                                <div dangerouslySetInnerHTML={{ __html: marked(jps) }}></div>
+                                <div id="code" dangerouslySetInnerHTML={{ __html: marked(jps) }}></div>
                             </div>
                         </ul>
                     </div>

@@ -5,10 +5,8 @@ const Business = () => {
             <div className="postMeta">
                 <div className="postDate">Publier le 17 Juillet 2024 </div>
                 <h1> Importance des données pour les entreprises</h1>
-                <div>
-                    <div >
-                        <img src="../../../default.jpg" alt="" className="postImage"/>
-                    </div>
+                <div className="postImage">
+                    <img src="../../../default.jpg" alt="" />
                 </div>
                 
             </div>

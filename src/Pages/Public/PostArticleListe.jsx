@@ -28,6 +28,24 @@ const PostArticleList = () => {
         description: "Spring data est un écosystèmes facilitant l'accès, l'interaction avec les base de données sur le framework spring boot. Il permet d'accédé á de base de données",
         url: "#/posts/spring-data-jpa"
       },
+    {
+      image: '/default.jpg',
+      title: "Introduction aux API Rest",
+      description: "Les API (Interfaces de Programmation d'Applications) jouent un rôle crucial dans le développement de logiciels modernes.",
+      url: "#/posts/api-rest"
+    },
+    {
+      image: '/deep learning.jpg',
+      title: "Introduction au Feature Engineering",
+      description: "Le feature engineering est une étape cruciale dans le développement de modèles d'IA. Il consiste à créer, sélectionner, et transformer les caractéristiques",
+      url: '#/posts/feature-engenering'
+    },
+    {
+      image: '/default.jpg',
+      title: "Sécuriser une application spring boot avec JWT",
+      description: "La sécurité est un aspect crucial de toutes application, une application non sécurisé ou vulnérables est exposés à des attaques. Ces attaque peuvent ce présenté sous différent formé comme la prise de controller d'un compte utilisateur,",
+      url: '#/posts/spring-boot-jwt-security'
+    },
   ];
 
   return (
