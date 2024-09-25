@@ -5,25 +5,25 @@ export default function(){
     const formations = [
         {
             image : "/default.jpg" ,
-            title : "Intoduction à python",
+            title : "Intoduction à la programmation en python",
             url :"https://github.com/mabakal/begin-with-python",
-            description : "Python est devenu le langage de premier choix de nombreux développeurs, quelques raisons de ce choix est que python est un langage polyvalent",
+            description : "Python est devenue le langage de premier choix de nombreux développeurs, quelques raisons de ce choix est que python est un langage polyvalent, apprenez á apprendre python maintenant",
             price :"Free",
             niveau : "Intermediaire"
         },
         {
             image : "/data.jpg" ,
-            title : "Apprenez á analyser les données",
+            title : "Introduction á l'analyse de données avec python",
             url :"https://github.com/mabakal/Data-analysis",
-            description : "La prise de décision est cruciale dans la vie quotidienne. Les résultats de nos actions sont directement influencés par les choix que nous faisons. L'une des approches pour prendre des décisions éclairées ",
+            description : "Dotez vous des outils afin d'analyser les données pour mieux prendre des décision",
             price :"Free",
             niveau : "Intermediaire"
         },
         {
             image : "/data.jpg" ,
-            title : "Apprenenez á programmer en Java",
+            title : "Introduction á la programmation en Java",
             url :"https://github.com/mabakal/Java",
-            description : "Liberer votre talent en développand en Java ",
+            description : "Java est un vieux langage de programme difficile á s'en débarasser. Il est utilisé pour développer des systèmes de grand envergure. Commencer dès maintenant á programmer á Java",
             price :"Free",
             niveau : "Intermediaire"
         }

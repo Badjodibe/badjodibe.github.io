@@ -1,8 +1,8 @@
-import ArticleList from "./ArticleList";
+import ProblemList from "../../Components/ProblemList";
 
-const Welcome = () => {
+export default function Problems(){
     return(
-        <div>
+        <>
             <div className="mt-15 flex flex-col md:flex-row items-center justify-between p-8 md:p-16 bg-gray-100 m-5 dark:bg-zinc-600">
                 {/* Texte à gauche */}
                 <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
@@ -16,28 +16,16 @@ const Welcome = () => {
                 </div>
 
                 {/* Image à droite */}
-                <div className="md:w-1/4  flex justify-center md:justify-end">
+                <div className="md:w-1/3  flex justify-center md:justify-end">
                     <img
-                    src="/profile.jpeg"
+                    src="/practice.jpg"
                     alt="Placeholder"
                     className="rounded-lg shadow-lg"
                     />
                 </div>
             </div>
-
-            <div class = "text-5xl text-left ">
-                <button class=" p-10 h-24 rounded-3xl underline" onClick={()=> window.open("#/posts", "_self")}>Voir toutes les publications</button>
-            </div>
             
-            <div>
-                <ArticleList />
-            </div>
-            <hr />
-            
-            <div>
-                <button className="contactButton" onClick={()=> window.open("#/contacts", "_self")}>Contacter moi</button>
-            </div>
-        </div>
+            <ProblemList/>
+        </>
     )
-};
-export default Welcome;
+}

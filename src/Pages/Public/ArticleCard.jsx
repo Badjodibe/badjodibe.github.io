@@ -6,7 +6,7 @@ const ArticleCard = ({ image, title, description, url }) => {
   };
 
   return (
-    <div class="max-w-sm rounded  overflow-hidden shadow-lg m-4 cursor-pointer" onClick={openInNewTab}>
+    <div class="max-w-sm rounded  overflow-hidden shadow-lg m-4 cursor-pointer  hover:border-green-600 dark:bg-black border" onClick={openInNewTab}>
       {/* Image cliquable */}
       <img class="w-full h-48 object-cover" src={image} alt={title} />
       {/* Titre et description cliquables */}

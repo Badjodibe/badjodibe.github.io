@@ -16,6 +16,18 @@ import APIREST from './Pages/Posts/api-rest';
 import Feature from './Pages/Posts/feature-engenering';
 import SpringJWT from './Pages/Posts/spring-jwt-security';
 import Formations from './Pages/Public/Formations';
+import Problems from './Pages/Public/Problems';
+import SommesDesPaires from './Practices/Probleme-de-la-somme-des-paires-dans-un-tableau';
+import TrieBulle from './Practices/trie-a-bulle';
+import TrieParInsertion from './Practices/trie-par-insertion';
+import TrieParSelection from './Practices/trie-par-selection';
+import RotationDeChaineDeCharactere from './Practices/rotation-de-chaine-de-caractere';
+import Palindrome from './Practices/palindrome';
+import InversionDeMot from './Practices/inversion-de-mot';
+import SuppressionDeDoublons from './Practices/suppression-de-doublons';
+import CompressionDeChaineDeCharactere from './Practices/compression-de-chaine-de-caractere';
+import PremierChaineNonRepeter from './Practices/caractere-non-reperte';
+import Anagramme from './Practices/anagrame';
 const App = () => {
   return (
     <>
@@ -35,7 +47,18 @@ const App = () => {
             <Route path='/posts' element={<Blog/>}/>
             <Route path='/contacts' element={<Contact/>}/>
             <Route path='/formations' element={<Formations/>}/>
-
+            <Route path='/ressources/problems' element={<Problems/>}/>
+            <Route path='/ressources/problems/probleme-de-la-somme-des-paires-dans-un-tableau' element={<SommesDesPaires/>}/>
+            <Route path='/ressources/problems/trie-par-bulle' element={<TrieBulle/>}/>
+            <Route path='/ressources/problems/trie-par-insertion' element={<TrieParInsertion/>}/>
+            <Route path='/ressources/problems/trie-par-selection' element={<TrieParSelection/>}/>
+            <Route path='/ressources/problems/rotation-de-chaine-de-caractere' element={<RotationDeChaineDeCharactere/>}/>
+            <Route path='/ressources/problems/palindrome' element={<Palindrome/>}/>
+            <Route path='/ressources/problems/inversion-de-mot' element={<InversionDeMot/>}/>
+            <Route path='/ressources/problems/suppression-de-doublons' element={<SuppressionDeDoublons/>}/>
+            <Route path='/ressources/problems/compression-de-chaine-de-caractere' element={<CompressionDeChaineDeCharactere/>}/>
+            <Route path='/ressources/problems/premier-caractere-non-repete' element={<PremierChaineNonRepeter/>}/>
+            <Route path='/ressources/problems/anagramme' element={<Anagramme/>}/>
           </Routes>
         </HashRouter>
       <Footer/>

@@ -130,7 +130,7 @@ Follow
   Project
 */
 .follow{
-  @apply flex flex-col justify-between space-y-3
+  @apply flex flex-col justify-between space-y-3 xs:flex-row
 }
 .footer-container {
   @apply flex flex-row justify-around pt-10  text-white pb-10 mt-20  dark:bg-zinc-700 dark:text-white xs:flex-col xs:justify-center xs:flex xs:p-10
@@ -167,24 +167,56 @@ Follow
 
 /*Formation*/
 .displayFormation{
-  @apply  bg-white shadow-lg flex flex-row w-full cursor-pointer hover:border-green-600
+  @apply  bg-white shadow-lg flex flex-row w-full cursor-pointer hover:border-green-600 dark:bg-black border
 }
 .formationImage{
   @apply  h-48 object-cover w-52
 }
 .formationTitle{
-  @apply text-xl font-bold text-gray-800 mb-2 
+  @apply text-xl font-bold text-gray-800 mb-2 dark:text-white
 }
 .formationDescription{
-  @apply text-gray-600 xs:hidden
+  @apply text-gray-600 xs:hidden  dark:text-white
 }
 .formationInformation{
-  @apply flex items-center text-gray-600 text-sm mb-2 space-x-5
+  @apply flex items-center text-gray-600 text-sm mb-2 space-x-5 dark:text-white
 }
 .formationList{
   @apply space-y-5 m-6 
 }
+
+/*Problem*/
+
+.ProblemContainer{
+  @apply  space-x-3 m-5 p-5 transition hover:bg-blue-500 justify-around ease-in-out duration-300 hover:scale-100 cursor-pointer hover:-translate-y-1 hover:shadow-md flex flex-row border 
 }
+.ProblemTitle{
+  @apply  text-black dark:text-white w-80 text-center
+}
+.ProblemDomain{
+  @apply text-indigo-400 xs:hidden w-52 text-center
+}
+.ProblemDifficulty{
+  @apply text-red-400 xs:hidden  w-52 text-center
+}
+
+.ProblemDetailDescription{
+  @apply border border-gray-500 shadow-md p-6
+}
+.ProblemDetailContainer{
+  @apply m-7  pl-60 pr-60 xs:pl-10 xs:pr-10 
+}
+.ProblemDetailTitle{
+  @apply text-2xl text-center
+}
+.ProblemDetailDefault{
+  @apply text-xl underline m-4
+}
+.containerSolutionProblem{
+  @apply flex flex-row justify-around
+}
+}
+
 
 /*
 For the footer of the projet
