@@ -433,9 +433,9 @@ export default function SpringDataJpa() {
                         logiciel consistant á faire correspondre des objets á des tables d'une base 
                         de données afin de facilité la création et la manipulation des observations 
                         dans la base de données. Dans cette approche, les entités représentent une 
-                        table de la base de données, comme les tables ces entitées peuvent avoir des 
+                        table de la base de données, comme les tables, ces entitées peuvent avoir des 
                         relations avec d'autre entitées. Concrètement, une entité est un classe java 
-                        annoté par une annotation Entity, ce qui permet á spring boot de le considéré
+                        annotée par une annotation Entity, ce qui permet á spring boot de la considérée
                         comme une table d'une base de données et de géré automatiquement sont cycle
                         de vie. Les champs dans cette classe font référence aux champs de la table 
                         correspondante dans la base de données.
@@ -446,28 +446,28 @@ export default function SpringDataJpa() {
                     <p>
                         Les tables de la base de données étant géré par les entitées, comment 
                         interagir avec les tables de la base de données, le concept de Repository 
-                        permet d'arrivé á cette fin. Ces derniers sont utilisé pour interagir avec 
+                        permet d'arrivé á cette fin. Ces derniers sont utilisés pour interagir avec 
                         la base de données en effectuant toutes les opérations classique sur les 
-                        bases de données. Au lieu d'écrir les requêtes sql en utilisant la l'api jdbc
-                        de java, les répositories représentes ces reequête sous forme de fonction 
+                        bases de données. Au lieu d'écrir les requêtes sql en utilisant l'api jdbc
+                        de java, les répositories représentes ces requête sous forme de fonction 
                         simplifier, en adoptant un nommage qui génère automatiquement les réquêtes.
-                        Quand un répository est créer, les fonctions crud de base sont sont générées 
+                        Quand un répository est créer, les fonctions crud (create, research, update et delete) de base sont  générées 
                         automatiquement. Sans le récréer ils peuvent se faire appèle directement.
                         Les repositories sont des interfaces qui étendent la classe JPARepository ou
                         CrudRepository. Le dernier est une amélioration du premier. spring data 
                         jpa est très flexible il adoptique une manière simple et puissant pour écrire
                         requête personnalisé. Avant de voir les différentes manière d'écrire les 
-                        requêtes personnalisé, voyons d'abord les methodes de bases qui sont mis á 
+                        requêtes personnalisées, voyons d'abord les methodes de bases qui sont mise á 
                         notre disposition.
                     </p>
                     <ul>
                         <li>
                             <h6>Requêtes de base</h6>
                             <p>
-                                Lorsque vous créer un repository, un ensemble de methode sont 
+                                Lorsque vous créez un repository, un ensemble de methode sont 
                                 prédéfinie, ils représantent  les opération  Crud 
                                 (Créer, rechercher, supprimer, modifier) de base. Par exemple la 
-                                fonctions save correspond á la requête demandant de stocker une 
+                                fonction save correspond á la requête demandant de stocker une 
                                 observation dans la base de données. Spring boot est très puissant,
                                 il donne la possibilité d'écrire les requêtes personnalisées soit en
                                 utilisant les requêtes de methodes dérivées ou en écrivant les 
@@ -490,7 +490,7 @@ export default function SpringDataJpa() {
                                     Commencer par le mots expriment l'action : L'action que vous 
                                     voudriez effectué est définie par un mot clé.
                                     Le nom de la fonction commence par le mot clé correspondant.
-                                    Ceci peux être find, count, get etc
+                                    Ceci peux être find, count, find etc
                                 </li>
                                 <li>
                                     Le nom du champs : Suivant ce mot clés le nom du champs sur 
@@ -569,8 +569,8 @@ export default function SpringDataJpa() {
                 <h5>Application</h5>
                 <p>
                     Nous allons créer une application qui va gérer un ensemble de voiture et ses 
-                    propriétaire, elle comprendra deux modèle, une pour les voitures et l'autre pour
-                    les propriétaire. Dans notre modèles, une personnes peux disposer plusieurs
+                    propriétaire, elle comprendra deux modèle, un pour les voitures et l'autre pour
+                    les propriétaires. Dans notre modèles, une personnes peux disposer plusieurs
                     voitures, mais une voiture ne peux avoir qu'un seul propriétaire ce qui veux 
                     dire que la tables qui represente les voitres et les propriétaires on une 
                     relation un á plusieurs. Ensuite nous allons créer un ensemble de requêtes pour 
@@ -598,7 +598,7 @@ export default function SpringDataJpa() {
                 <div id="code" dangerouslySetInnerHTML={{ __html: marked(personne) }}></div>
                 <h5>Entité voiture</h5>
                 <p>
-                    De la même manière qu'une personne, une voiture á ces information qui sont 
+                    De la même manière qu'une personne, une voiture á ces informations qui sont 
                     la marque, le model et l'année de fabrication. Cette classe dispose d'une 
                     relation de plusieurs á un avec la classe personne, c'est á dire une 
                     personne peux avoir plusieurs voiture
@@ -650,10 +650,10 @@ export default function SpringDataJpa() {
                 <h3>Conclusion</h3>
                 <p>
                     Dans ce projet nous avons vu les bases de l'écosystème de spring data jpa.
-                    Deux concept sont très important, les entitées qui sont des classes qui 
+                    Deux concept sont très importants, les entitées qui sont des classes qui 
                     représentent les tables de la base de données. Ces entitèes supportent tous
-                    les types de relation équivalent au type de relation qui existe dans les base
-                    de données relationnelle. Pour interagir avec la base de données,
+                    les types de relation équivalent au type de relations qui existent dans les bases
+                    de données relationnelles. Pour interagir avec la base de données,
                     les repositories sont utilisés, ces derniers sont des interfaces utilisées
                     pour interagir avec les base de données. Dans les repositories il y a des 
                     fonctions de bases, qui sont généré automatiquement correspondant aux fonction 

@@ -26,7 +26,6 @@ export default function PremierChaineNonRepeter(){
                 <p className="ProblemDetailDescription">
                     <p> <strong>Input</strong> <span>aabbcc</span></p>
                     <p><strong>Output</strong> <span>None</span></p>
-                    
                 </p>
             </div>
        </>

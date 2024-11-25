@@ -26,9 +26,7 @@ export default function Anagramme(){
                     
                 </p>
             </div>
-            <div className="w-1/3  flex place-content-center bg-gray-200">
-                <VideoPlayer  src="https://www.youtube.com/embed/joNr59r7LE4/start=0&end=60" width="900" height="400"/>
-            </div>
+            
         </div>
             
        </>

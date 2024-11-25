@@ -10,8 +10,7 @@ const Welcome = () => {
                     Bienvenue 
                     </h2>
                     <p className="text-gray-600 text-lg dark:text-white">
-                       Ingénieur de logiciel. Developper des logi Par ailleurs j'aime passé mon temps á développer des modèles de modèles 
-                       d'intelligence artificiel
+                        Je suis BADJO Dibéa koffi, ingénieur logiciel passionné par la création de solutions innovantes.
                     </p>
                 </div>
 
@@ -25,8 +24,8 @@ const Welcome = () => {
                 </div>
             </div>
 
-            <div class = "text-5xl text-left ">
-                <button class=" p-10 h-24 rounded-3xl underline" onClick={()=> window.open("#/posts", "_self")}>Voir toutes les publications</button>
+            <div className = "text-5xl text-left xs:text-3xl">
+                <button className=" p-10 xs:p-5 bg-blue-600" onClick={()=> window.open("#/posts", "_self")}>Voir toutes les publications</button>
             </div>
             
             <div>

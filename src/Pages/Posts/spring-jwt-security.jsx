@@ -766,7 +766,7 @@ export default function SpringJWT(){
         <>
             <div className="postMeta">
                 <div className="postDate">Publier le 29 Août 2024</div>
-                <h1>Sécuriser un application spring boot avec JWT</h1>
+                <h1>Sécuriser une application spring boot avec JWT</h1>
                 <div className="postImage">
                         <img src="/default.jpg" alt=""/>
                     </div>
@@ -793,9 +793,9 @@ export default function SpringJWT(){
                     Spring  security  dispose d'un écosystème de sécurité très avancé. Il est très flexible et 
                     tient compte de différents types d'attaques. Une des manières la plus courante de sécuriser 
                     est  utilisation du  JWT (JSON Web Token). C'est un mecanisme de cryptage 
-                    et signature d'information utilisé pour échangé des données en deux entité sous forme de 
+                    et signature d'information utilisé pour échangé des données en deux entitées sous forme de 
                     JSON. Dans cette article je vous montre comment authentifié un utilisateur en utilisant 
-                    le JWT. Non seulement le fondement est expliqué, nous allons aussi voir la partie pratique 
+                    JWT. Non seulement le fondement est expliqué, nous allons aussi voir la partie pratique 
                     en développant une application web basé sur Spring boot.
                 </p>
                 <h4>C'est quoi le JWT</h4>
@@ -885,13 +885,13 @@ export default function SpringJWT(){
                </p>
                <h4>Pratique</h4>
                <p>
-                    Le projet sur lequel nous allons travaillé vise á simuler l'authentification d'un utilisateur sur spring boot. Nous allons créer
+                    Le projet sur lequel nous allons travaillé vise á authentifier un utilisateur sur spring boot. Nous allons créer
                     un système qui consiste á enrégistrer un utilisateur dans notre bases de données avec ces 
-                    information, le mot de passe biensûr crypté et puis l'authenfié. Premièrement nous allons créer l'utilisateur
+                    informations, le mot de passe, biensûr crypté et puis l'authenfié. Premièrement nous allons créer l'utilisateur
                </p>
                <h5>User</h5>
                <p>
-                    Créer une classe que vous allez nommer user avec les information comme ceci.
+                    Créer une classe que vous allez nommer <strong>User</strong> avec les informations comme ce va suivre.
                     Cette classe représente les utilisateurs de notre système.Pour facilité la sécurité, 
                     spring security dispose d'une classe nommé UserDetails, celle classe est utilisé pour 
                     traité toutes les opérations liées à la sécurité des utilisations.  
@@ -942,13 +942,13 @@ export default function SpringJWT(){
                <div id="code" dangerouslySetInnerHTML={{ __html: marked(jwtservice) }}></div>
                <p>
                 Maintenant créons un filtre, a travers lequel va passer toutes les réquêtes, ce filtre va éffectué
-                quelques opération sur la réquête puis ensuite la faire passé. Dans cette classe le service que nous avons 
-                créer dans la classe JWTService  seront utilisées. Voici ce que nous allons faire dans cette classe en gros. 
+                quelques opérations sur la réquête puis ensuite la faire passé. Dans cette classe les services que nous avons 
+                créés dans la classe JWTService  seront utilisées. Voici ce que nous allons faire dans cette classe en gros. 
                 Lorsque le client demandera une ressource, dans le header de la requête se trouve un attibue nommé 
                 authorization, c'est là que le token est extrait. L'autorisation commence par <strong>Bearer</strong> 
                 et ce qui suit est le token. Nous allons dans un premier temps extraire le token, puis le email qui 
                 est associé au token via le service de la classe JWTService  que nous avons créer. Si dans un premier 
-                temps l'attribue autorisation est null, ce qui veux il y pas de token dans la requête, cette dernière 
+                temps l'attribue autorisation est null, ce qui veux dire qu'il y a pas de token dans la requête, cette dernière 
                 est laissé passé. Dans le cas contraire, nous allons verifier si le email est diffèrent de null ou 
                 l'objet authentification dans le context de sécurité est null, si c'est le cas nous passons au processus 
                 de validation du token, un objet authentification est généré dans le context de sécurité pour être
@@ -957,17 +957,17 @@ export default function SpringJWT(){
                <div id="code"  dangerouslySetInnerHTML={{ __html: marked(jwtauthentificationFilter) }}></div>
                <p>
                     Dans les processus d'authentification de l'écosystème spring boot sécurity, nous allons 
-                    éffectué quelques configuration de certains objet dans notre application, ces dernier 
+                    éffectués la configurations de certains objets dans notre application, ces dernier 
                     seront gérés automatiquement par spring boot ce qui veux dire qu'ils seront annotés par 
                     les Bean.
                </p>
                <ul>
                     <li>
-                      <strong>AuthenticationManager :</strong> C'est l'objet responsable de géré l'authentifications des utilisateurs
+                      <strong>AuthenticationManager :</strong> C'est l'objet responsable de gérer l'authentifications des utilisateurs
                     </li>
                     <li>
                        <strong>AuthenticationProvider :</strong> Cet objet détermine quel type d'authentification
-                        est procédé. Je rappèle qu'il y a plusieur type d'authentification, l'authentication á 
+                        est procédée. Je rappèle qu'il y a plusieur type d'authentification, l'authentication á 
                         travers les données de la bases de données est utilisé dans notre cas. pour en savoir plus veillez visité ceci <a href=" https://docs.spring.io/spring-security/site/docs/4.0.x/apidocs/org/springframework/security/authentication/AuthenticationProvider.html"></a>
                     </li>
                     <li>
@@ -981,7 +981,7 @@ export default function SpringJWT(){
                <p>
                     Ces configuration concernent les objects dont la gestion de leur cycle de vie sera pris en 
                     charge par spring boot. Maintenant effectuons les configurations des requêtes pour définir
-                    quel type de requête doit être authenfié ou pas, comment nous allons ajoutés les filtres etc.
+                    quel type de requête doit être authenfier ou pas, comment nous allons ajoutés les filtres etc.
                </p>
                <div id="code" dangerouslySetInnerHTML={{ __html: marked(securityconfiguration) }}></div>
                <p>
@@ -1009,7 +1009,7 @@ export default function SpringJWT(){
                <div  id="code" dangerouslySetInnerHTML={{ __html: marked(registerRequest) }}></div>
 
                <p>
-                    Que ça soit l'authentification ou l'inscription, une reponse, le token pour être précis sera envoyé au client. Cette reponse est modélisé par la classe suivante
+                    Que ça soit l'authentification ou l'inscription, une reponse, le token pour être précis sera envoyé au client. Cette reponse est modélisée par la classe suivante
                </p>
                <div id="code" dangerouslySetInnerHTML={{ __html: marked(response) }}></div>
                <p>
@@ -1026,7 +1026,7 @@ export default function SpringJWT(){
                </p>
                <div id="code" dangerouslySetInnerHTML={{ __html: marked(authenticationController) }}></div>
                <p>
-               Maintenant lancé votre application, envoyer des requêtes à travères le postman pour voir le résultat. Assurez vous
+               Maintenant lancé votre application, envoyer des requêtes à travers  postman pour voir le résultat. Assurez vous
                d'avoir effectuer les configuration de l'application et de la base de données adéquate.
                </p>
                <h3>

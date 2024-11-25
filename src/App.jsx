@@ -28,6 +28,17 @@ import SuppressionDeDoublons from './Practices/suppression-de-doublons';
 import CompressionDeChaineDeCharactere from './Practices/compression-de-chaine-de-caractere';
 import PremierChaineNonRepeter from './Practices/caractere-non-reperte';
 import Anagramme from './Practices/anagrame';
+import CommingSoon from './Components/comming';
+import Transposition from './Practices/transpostion';
+import RotationMatrix from './Practices/grand-sous-tableaux';
+import Hadmard from './Practices/hadmard';
+import PlusGrandSousTableau from './Practices/grand-sous-tableaux';
+import ChiffrementCesar from './Practices/chiffrement-cesar';
+import MatriceSommes from './Practices/matrice-somme';
+import KPP from './Practices/kpp';
+import PermutationDeChaine from './Practices/permutation-chaine';
+import ParentheseValid from './Practices/parenthese-valide';
+
 const App = () => {
   return (
     <>
@@ -54,11 +65,22 @@ const App = () => {
             <Route path='/ressources/problems/trie-par-selection' element={<TrieParSelection/>}/>
             <Route path='/ressources/problems/rotation-de-chaine-de-caractere' element={<RotationDeChaineDeCharactere/>}/>
             <Route path='/ressources/problems/palindrome' element={<Palindrome/>}/>
+            <Route path='/ressources/problems/transposition-matrice' element={<Transposition/>}/>
             <Route path='/ressources/problems/inversion-de-mot' element={<InversionDeMot/>}/>
+            <Route path='/ressources/problems/rotation-de-matrice' element={<RotationMatrix/>}/>
+            <Route path='/ressources/problems/hadmard' element={<Hadmard/>}/>
+            <Route path='/ressources/problems/chiffrement-de-cesar' element={<ChiffrementCesar/>}/>
+            <Route path='/ressources/problems/kpp-algorithme' element={<KPP/>}/>
+            <Route path='/ressources/problems/plus-grand-sous-tableau' element={<PlusGrandSousTableau/>}/>
+            <Route path='/ressources/problems/matrice-somme' element={<MatriceSommes/>}/>
             <Route path='/ressources/problems/suppression-de-doublons' element={<SuppressionDeDoublons/>}/>
             <Route path='/ressources/problems/compression-de-chaine-de-caractere' element={<CompressionDeChaineDeCharactere/>}/>
             <Route path='/ressources/problems/premier-caractere-non-repete' element={<PremierChaineNonRepeter/>}/>
+            <Route path='/ressources/problems/permutation-de-chaine' element={<PermutationDeChaine/>}/>
             <Route path='/ressources/problems/anagramme' element={<Anagramme/>}/>
+            <Route path='/ressources/problems/parenthese-valid' element={<ParentheseValid/>}/>
+            <Route path='/formations/python-comming' element={<CommingSoon urlImage={"/python.png"} title={"Cette formation sera bientôt disponible"}/>}/>
+            <Route path='/formations/data-analysis-comming' element={<CommingSoon urlImage={"/data.png"} title={"Cette formation sera bientôt disponible"}/>}/>
           </Routes>
         </HashRouter>
       <Footer/>

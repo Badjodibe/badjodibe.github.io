@@ -6,12 +6,14 @@ const Footer = () =>{
       };
 
     return(
-        <>
+
             <footer>
             <div className="footer-container">
                 <div className="footer-section ">
                     <h4>BADJO Dibéa koffi</h4>
-                    <p>Développeur informatique passionné par la création de solution innovantes</p>
+                    <p>
+                        Je suis BADJO Dibéa koffi, ingénieur logiciel passionné par la création de solutions innovantes.
+                    </p>
                 </div>
 
                 <div className="footer-section">
@@ -25,8 +27,7 @@ const Footer = () =>{
                         --> 
                         */}
                         <li><a href="#/posts">Blog</a></li>
-                        <li><a href="#/contacts">Contact</a></li>
-                        <li><a href="#/formations">Formations</a></li>
+                        <li><a href="#/formations">Formations</a></li>  
                     </ul>
                 </div>
 
@@ -59,8 +60,6 @@ const Footer = () =>{
                 <p>&copy;{current()} BADJO Dibéa Koffi. Tous droits réservés.</p>
             </div>
             </footer>
-
-        </>
     )
 }
 export default Footer;

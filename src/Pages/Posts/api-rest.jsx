@@ -105,9 +105,8 @@ export default function APIREST(){
                     Les API (Interfaces de Programmation d'Applications) jouent un rôle crucial dans 
                     le développement de logiciels modernes. Elles permettent à différentes applications de 
                     communiquer entre elles, facilitant l'échange de données et la création de systèmes 
-                    intégrés. Dans cet article, nous allons explorer les concepts clés des API REST et vous 
-                    montrer comment créer une application simple en utilisant Spring Boot, un framework Java
-                    populaire.
+                    intégrés. Dans cet article, je vais vous faire dècouvrir les concepts clés des API REST et vous 
+                    montrer comment créer une application simple en utilisant Spring Boot.
                 </p>
                 <h4>Qu'est-ce qu'une API REST ?</h4>
                 <p>
@@ -166,7 +165,7 @@ export default function APIREST(){
                             <h5>Définir le modèle de données</h5>
                             <p>
                                 Supposons que nous construisons une API pour gérer une collection de livres.
-                                 Nous commençons par définir une entité  <strong>Book</strong>:
+                                Nous commençons par définir une entité  <strong>Book</strong>:
                             </p>
                             
                             <div id="code" dangerouslySetInnerHTML={{ __html: marked(book) }}></div>

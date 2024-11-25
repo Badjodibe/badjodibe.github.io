@@ -51,6 +51,24 @@ export default function ProblemList(){
             url : "#/ressources/problems/suppression-de-doublons"
         },
         {
+            title : "Rotation de Matrice",
+            difficulty : "Intermédiaire",
+            domain : "Mathematique",
+            url : "#/ressources/problems/rotation-de-matrice"
+        },
+        {
+            title : "Plus grand sous tableaux",
+            difficulty : "Intermédiaire",
+            domain : "Structure de données",
+            url : "#/ressources/problems/plus-grand-sous-tableau"
+        },
+        {
+            title : "Transposition de matrix",
+            difficulty : "Intermédiaire",
+            domain : "Mathematique",
+            url : "#/ressources/problems/transposition-matrice"
+        },
+        {
             title : "Problème de tri à bulles",
             difficulty : "Facile",
             domain : "Structure de données",
@@ -63,10 +81,46 @@ export default function ProblemList(){
             url : "#/ressources/problems/trie-par-insertion"
         },
         {
+            title : "Somme de deux matrices",
+            difficulty : "Intermédiaire",
+            domain : "Mathematique, Structure de données",
+            url : "#/ressources/problems/matrice-somme"
+        },
+        {
+            title : "Hadmard",
+            difficulty : "Intermédiaire",
+            domain : "Structure de données",
+            url : "#/ressources/problems/hadmard"
+        },
+        {
             title : "Problème de tri par sélection",
             difficulty : "Intermédiaire",
             domain : "Structure de données",
             url : "#/ressources/problems/trie-par-selection"
+        },
+        {
+            title : "Chiffrement de César",
+            difficulty : "Intermédiaire",
+            domain : "cryptographie",
+            url : "#/ressources/problems/chiffrement-de-cesar"
+        },
+        {
+            title : "Algorithme de k-plus proche voisin",
+            difficulty : "Intermédiaire",
+            domain : "Machine Learning, IA",
+            url : "#/ressources/problems/kpp-algorithme"
+        },
+        {
+            title : "Permutation de chaine",
+            difficulty : "Intermédiaire",
+            domain : "Traitement de text",
+            url : "#/ressources/problems/permutation-de-chaine"
+        },
+        {
+            title : "Parenthese valid",
+            difficulty : "Intermédiaire",
+            domain : "Traitement de text",
+            url : "#/ressources/problems/parenthese-valid"
         },
     ];
     return(

@@ -7,11 +7,12 @@ export default function Problems(){
                 {/* Texte à gauche */}
                 <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4 dark:text-white">
-                    Bienvenue 
+                        La pratique mène à l'excellence.
                     </h2>
                     <p className="text-gray-600 text-lg dark:text-white">
-                       Ingénieur de logiciel. Developper des logi Par ailleurs j'aime passé mon temps á développer des modèles de modèles 
-                       d'intelligence artificiel
+                        Un ensemble de défis pour renforcer vos compétences. Explorez des algorithmes dans 
+                        divers domaines, allant des problèmes simples aux plus complexes.
+                        Améliorez vos compétences par la pratique.
                     </p>
                 </div>
 
