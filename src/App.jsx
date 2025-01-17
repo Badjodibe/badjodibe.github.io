@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import About from './Pages/Public/About'
 import Welcome from './Pages/Public/Welcome'
 import Hadoop from './Pages/Posts/setup-hadoop-cluster-on-aws';
@@ -11,7 +11,6 @@ import Footer from './Components/Footer';
 import Blog from './Pages/Public/Blog';
 import Header from './Components/Header';
 import Contact from './Components/ContactMe';
-import { HashRouter } from "react-router-dom";
 import APIREST from './Pages/Posts/api-rest';
 import Feature from './Pages/Posts/feature-engenering';
 import SpringJWT from './Pages/Posts/spring-jwt-security';
@@ -30,34 +29,46 @@ import PremierChaineNonRepeter from './Practices/caractere-non-reperte';
 import Anagramme from './Practices/anagrame';
 import CommingSoon from './Components/comming';
 import Transposition from './Practices/transpostion';
-import RotationMatrix from './Practices/grand-sous-tableaux';
-import Hadmard from './Practices/hadmard';
+import RotationMatrix from './Practices/rotation-matrice';
 import PlusGrandSousTableau from './Practices/grand-sous-tableaux';
+import Hadmard from './Practices/hadmard';
 import ChiffrementCesar from './Practices/chiffrement-cesar';
 import MatriceSommes from './Practices/matrice-somme';
 import KPP from './Practices/kpp';
 import PermutationDeChaine from './Practices/permutation-chaine';
 import ParentheseValid from './Practices/parenthese-valide';
-
+import Java from './Pages/Public/Java';
+import KPPTheorie from './Pages/Posts/kpp';
+import Developers from './Pages/Public/Developers';
+import Entreprise from './Pages/Public/Entreprise';
+import Latex from './Pages/Public/Latex';
+import SpeakerSection from './Pages/Public/Speakers';
+import StructuresDeDonnees from './Pages/Public/DataStructureJava';
 const App = () => {
   return (
     <>
       <Header/>
         <HashRouter>
           <Routes>
+
             <Route exact path="/" element={<Welcome/>} />
             <Route path="/about" element={<About/>} />
-            <Route path='/posts/setup-hadoop-cluster-on-aws' element={<Hadoop/>}/>
-            <Route path='/posts/understand-lstm' element={<Lstm/>}/>
-            <Route path='/posts/what-is-deep-learning' element={<DeepLearning/>}/>
-            <Route path='/posts/data-for-business' element={<Business/>}/>
-            <Route path='/posts/spring-data-jpa' element={<SpringDataJpa/>}/>
-            <Route path='/posts/spring-boot-jwt-security' element={<SpringJWT/>}/>
-            <Route path='/posts/api-rest' element={<APIREST/>}/>
-            <Route path='/posts/feature-engenering' element={<Feature/>}/>
-            <Route path='/posts' element={<Blog/>}/>
             <Route path='/contacts' element={<Contact/>}/>
             <Route path='/formations' element={<Formations/>}/>
+            <Route path='/posts/developers' element={<Developers/>}/>
+            <Route path='/posts/company' element={<Entreprise/>}/>
+            <Route path='/speakers' element={<SpeakerSection/>}/>
+
+            <Route path='/posts/developers/setup-hadoop-cluster-on-aws' element={<Hadoop/>}/>
+            <Route path='/posts/developers/understand-lstm' element={<Lstm/>}/>
+            <Route path='/posts/developers/what-is-deep-learning' element={<DeepLearning/>}/>
+            <Route path='/posts/company/data-for-business' element={<Business/>}/>
+            <Route path='/posts/developers/spring-data-jpa' element={<SpringDataJpa/>}/>
+            <Route path='/posts/developers/spring-boot-jwt-security' element={<SpringJWT/>}/>
+            <Route path='/posts/developers/api-rest' element={<APIREST/>}/>
+            <Route path='/posts/developers/feature-engenering' element={<Feature/>}/>
+            <Route path='/posts/developers/algorithme-des-k-plus-proche-voisin' element={<KPPTheorie/>}/>
+           
             <Route path='/ressources/problems' element={<Problems/>}/>
             <Route path='/ressources/problems/probleme-de-la-somme-des-paires-dans-un-tableau' element={<SommesDesPaires/>}/>
             <Route path='/ressources/problems/trie-par-bulle' element={<TrieBulle/>}/>
@@ -79,8 +90,13 @@ const App = () => {
             <Route path='/ressources/problems/permutation-de-chaine' element={<PermutationDeChaine/>}/>
             <Route path='/ressources/problems/anagramme' element={<Anagramme/>}/>
             <Route path='/ressources/problems/parenthese-valid' element={<ParentheseValid/>}/>
+
+
             <Route path='/formations/python-comming' element={<CommingSoon urlImage={"/python.png"} title={"Cette formation sera bientôt disponible"}/>}/>
             <Route path='/formations/data-analysis-comming' element={<CommingSoon urlImage={"/data.png"} title={"Cette formation sera bientôt disponible"}/>}/>
+            <Route path='/formations/java-avance' element={<Java/>}/>
+            <Route path='/formations/latex-pour-les-debutants' element={<Latex/>}/>
+            <Route path='/formations/data-structure-java' element={<StructuresDeDonnees/>}/>
           </Routes>
         </HashRouter>
       <Footer/>

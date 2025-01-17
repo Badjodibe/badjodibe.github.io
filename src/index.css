@@ -4,7 +4,7 @@
 
 @layer base{
   #root{
-    @apply dark:bg-black dark:text-white xs:text-sm
+    @apply dark:bg-black dark:text-white xs:text-sm 
   }
     h1{
         @apply text-7xl text-center mt-4 mb-4 xs:text-5xl
@@ -25,11 +25,12 @@
       @apply flex flex-row rounded-sm pb-11 pt-12  justify-around bg-zinc-800 
     }
     a{
-      @apply text-green-400 hover:text-white
+      @apply text-green-400 hover:text-blue-700 
     }
     footer{
       @apply bg-zinc-800
     }
+
 }
 
 @layer components{
@@ -102,13 +103,13 @@
   @apply text-xl text-green-600
 }
 .lien{
-  @apply text-blue-700
+  @apply  hover:text-blue-700 
 }
 /*
 Header
 */
 #navLink{
-  @apply flex flex-row justify-center space-x-7 
+  @apply flex flex-row justify-center space-x-7
 }
 /*
   For conférences
@@ -168,10 +169,10 @@ Follow
 /*Formation*/
 
 .displayFormation{
-  @apply hover:border-blue-600 bg-white shadow-lg flex flex-row w-full cursor-pointer dark:bg-black border xs:h-32
+  @apply hover:border-blue-600 bg-white shadow-lg flex flex-row w-full cursor-pointer dark:bg-black border xs:h-44
 }
 .formationImage{
-  @apply  h-48 object-cover w-52  xs:w-28 xs:h-32 xs:hidden
+  @apply  h-56 object-cover w-52  xs:w-28 xs:h-32 xs:hidden
 }
 .formationTitle{
   @apply text-xl font-bold text-gray-800 mb-2 dark:text-white xs:text-lg
@@ -246,20 +247,81 @@ Follow
 .WebinaireList{
   @apply grid grid-cols-2 m-10
 }
+
+.FormationGuide{
+  @apply flex flex-row justify-around mt-6 mb-6 bg-zinc-500 sticky top-0
+}
+.FormationButton{
+  @apply hover:bg-green-600 p-5 text-white
+}
+.Entete{
+  @apply flex flex-row mt-10 ml-2 justify-around xs:flex-col
+}
+.Meta{
+  @apply w-1/2 space-y-5 flex flex-col xs:w-full xs:space-y-1 xs:items-center
+}
+.Contenu{
+  @apply  flex flex-col pl-60 pr-60 xs:pl-10 xs:pr-10 mt-5
+}
+.enrolle{
+  @apply bg-red-500 w-60 h-9 text-white
+}
+.horaire{
+  @apply bg-green-600 w-60 h-9 text-white
+}
+.metaInfo{
+  @apply shadow-lg w-72 h-28 flex flex-col   border justify-around items-center cursor-pointer
+}
+.info{
+  @apply flex flex-row space-x-10 xs:flex-col xs:space-x-0 xs:space-y-5
+}
+.module{
+  @apply font-bold text-sm
+}
+.displayModule{
+  @apply flex flex-col
+}
+#hidden{
+  @apply hidden
+}
+.jours{
+  @apply fixed bottom-0 left-0  bg-white text-2xl text-black rounded-xl text-center p-4 ml-6 xs:text-sm
 }
 
+.about{
+  @apply  text-lg pl-10 pr-60 border  indent-12 xs:pr-0 xs:indent-0 p-6 border-black
+}
+.aboutContainer{
+  @apply  m-5 flex flex-row divide-x-2 justify-center xs:flex-col border
+}
+.aboutImage{
+  @apply rounded-full flex items-center justify-center p-3 
+}
+.imageAbout{
+  @apply  rounded-full
+}
+.container{
+  @apply flex flex-col
+}
+.titre{
+  @apply  p-3 text-right xs:text-2xl text-4xl xs:font-bold font-bold underline decoration-green-400 underline-offset-4
+}
 
+.Menu{
+  @apply flex flex-col absolute text-white top-full h-96 p-6 w-full z-10 left-0 bg-zinc-800 cursor-default
+}
+.menu{
+  @apply text-green-500 hover:text-blue-600 cursor-pointer 
+}
+
+.ressourceHeader{
+  @apply text-green-500 text-2xl cursor-pointer 
+}
+.ressourceDescription{
+  @apply p-5
+}
 /*
 For the footer of the projet
 */
 
-
-
-  
-
-  
-
-  
-
-  
-
+}
